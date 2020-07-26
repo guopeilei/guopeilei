@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pythonweb:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pythonweb_jar</output-path>
+    <root id="archive" name="pythonweb.jar">
+      <element id="module-output" name="pythonweb" />
+    </root>
+  </artifact>
+</component>

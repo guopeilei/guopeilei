@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="gb2312"?>
+<service>
+    <sys>
+        <snd_sys>BSM</snd_sys>
+        <rcv_sys>ICS</rcv_sys>
+        <snd_seqno>000500075497</snd_seqno>
+        <snd_date>20200716</snd_date>
+        <snd_time>185419</snd_time>
+        <terminal_no>A0401011</terminal_no>
+        <branch_id>27040101</branch_id>
+        <teller_id>BSMP</teller_id>
+        <tran_desc>0012000</tran_desc>
+        <merch_type></merch_type>
+        <merch_no></merch_no>
+        <merch_name></merch_name>
+        <tran_code>2106</tran_code>
+        <tran_type>2099</tran_type>
+        <channel_list>05</channel_list>
+    </sys>
+    <app>
+        <SecTrack></SecTrack>
+        <TrdTrack></TrdTrack>
+        <BookFee>0.00</BookFee>
+        <OldCard>6225060111028499779</OldCard>
+        <Quypwd>856A142597CE2A4E</Quypwd>
+        <Dkpwd></Dkpwd>
+        <Pwd>856A142597CE2A4E</Pwd>
+        <NewPwd>5368A5D1AA6FB636</NewPwd>
+        <CertNo>610121199206181874</CertNo>
+        <CertType>01</CertType>
+        <CustName>�����</CustName>
+        <NewCard>6230270100063280760</NewCard>
+        <Wkflg></Wkflg>
+        <Ccy></Ccy>
+        <CardKind>62</CardKind>
+        <Feeflg>0</Feeflg>
+        <ChgCardFlag>1</ChgCardFlag>
+        <MedType></MedType>
+        <IcData>
+            2049F2608C13D24323F2B09189F2701809F101307020103A0A000010A010000000000BD13E18B9F37044295E7DD9F3602000C950500000000009A032007169C01999F02060000000000005F2A02015682027C009F1A0201569F03060000000000009F3303e0f8c8
+        </IcData>
+        <NewCardSeq>000</NewCardSeq>
+    </app>
+</service>

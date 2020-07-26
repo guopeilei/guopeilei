@@ -1,0 +1,258 @@
+2020-07-14 16:04:52,279 - zktools.javatools.operjava - ERROR - tmn_id:ABS002 zk_url:9.1.5.22:2181 port:1099 ip:9.1.6.247 num_str:400 system_name:ABS 
+2020-07-14 16:16:17,431 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/javaTest.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-15 14:59:39,501 - zktools.javatools.operjava - ERROR - tmn_id:VASP001 zk_url:9.1.5.23:2181 port:1099 ip:9.1.8.171 num_str:0 system_name:VASP , Class com.guo.auth.JavaTools is not found
+
+2020-07-15 14:59:39,738 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-15 15:54:21,466 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-15 16:34:00,076 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-15 19:17:02,484 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-15 19:17:06,990 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-17 08:34:15,565 - zktools.javatools.operjava - ERROR - tmn_id:IMPP001 zk_url:9.1.5.22:2181 port:1099 ip:9.1.8.20 num_str:0 system_name:IMPP , Class com.guo.auth.JavaTools is not found
+
+2020-07-17 08:34:15,877 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+2020-07-17 09:12:18,915 - zktools.authservice.serviceauthservice - ERROR - 解析xml报错
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 84, in modify_service_auth_file
+    dom_tree = parseString(file_content)
+  File "D:\app\Python\Python37\lib\xml\dom\minidom.py", line 1968, in parseString
+    return expatbuilder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 925, in parseString
+    return builder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 65
+2020-07-17 09:12:18,975 - django.request - ERROR - Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 151, in service_auth
+    new_zk_data = modify_service_auth_file(zk_data, db_auth_info, system_name)
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 103, in modify_service_auth_file
+    raise e
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 84, in modify_service_auth_file
+    dom_tree = parseString(file_content)
+  File "D:\app\Python\Python37\lib\xml\dom\minidom.py", line 1968, in parseString
+    return expatbuilder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 925, in parseString
+    return builder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 65

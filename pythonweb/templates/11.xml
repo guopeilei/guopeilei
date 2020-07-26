@@ -1,0 +1,31 @@
+<service>
+    <sys>
+        <snd_sys>BSM</snd_sys>
+        <rcv_sys>CORE</rcv_sys>
+        <snd_seqno>000500075553</snd_seqno>
+        <snd_date>20200717</snd_date>
+        <snd_time>143826</snd_time>
+        <terminal_no>A0401013</terminal_no>
+        <branch_id>27040101</branch_id>
+        <teller_id>BSMP</teller_id>
+        <tran_desc>0012000</tran_desc>
+        <merch_type></merch_type>
+        <merch_no></merch_no>
+        <merch_name></merch_name>
+        <tran_code>B037</tran_code>
+        <tran_type>2074</tran_type>
+        <channel_list>05</channel_list>
+    </sys>
+    <app>
+        <card_no>6230270100063278467</card_no>
+        <password>CC16F4FDC11C3EFD</password>
+        <track2>6230270100063278467=30122200000005840</track2>
+        <track3></track3>
+        <tran_amt>100.00</tran_amt>
+        <renewflag>01</renewflag>
+        <cashflag>1</cashflag>
+        <term>060</term>
+        <icc_data></icc_data>
+        <card_seq_id></card_seq_id>
+    </app>
+</service>

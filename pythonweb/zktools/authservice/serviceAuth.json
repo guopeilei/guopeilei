@@ -1,0 +1,71 @@
+{
+    "envs": {
+      "DEV-SIT": {
+        "name": "IBP-SIT测试环境(互金)",
+        "zkurl":"9.1.6.42:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenkf",
+        "choose": "false"
+      },
+      "IBP-SIT": {
+        "name": "IBP-SIT测试环境(互金)",
+        "zkurl":"9.1.5.176:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt",
+        "choose": "false"
+      },
+      "CRMS-SIT": {
+        "name": "CRMS-SIT测试环境(信贷)",
+        "zkurl":"9.1.5.22:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn",
+        "choose": "false"
+      },
+      "UAT1": {
+        "name": "ESB-UAT1测试环境",
+        "zkurl":"9.1.5.23:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1",
+        "choose": "false"
+      },
+      "UAT2": {
+        "name": "ESB-UAT2测试环境",
+        "zkurl":"9.1.5.171:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut",
+        "choose": "false"
+      },
+      "UAT3": {
+        "name": "ESB-UAT3测试环境",
+        "zkurl":"http://9.1.5.24:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat3",
+        "choose": "false"
+      },
+      "UAT4": {
+        "name": "ESB-UAT4测试环境",
+        "zkurl":"9.1.8.216:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccendb",
+        "choose": "false"
+      },
+     "UAT5":{
+        "name": "ESB-UAT5测试环境",
+        "zkurl":"9.1.5.40:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.5.41:60000/esccen",
+        "choose": "false"
+      },
+      "UAT7":{
+        "name": "ESB-UAT7测试环境",
+        "zkurl":"9.1.8.25:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.10.203:60000/esccenu7",
+        "choose": "false"
+      },
+      "ELE-TICKT":{
+        "name": "电票测试环境",
+        "zkurl":"9.1.8.167:2181",
+        "db2url": "ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccenu5",
+        "choose": "false"
+      }
+    },
+    "currentEnv": {
+      "env": "DEV-SIT",
+      "All-Service": false,
+      "services": [
+          "200103000101"
+      ]
+    }
+}

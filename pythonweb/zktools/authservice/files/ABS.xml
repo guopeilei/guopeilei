@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Authoritys>
+  <consumer id="ABS" name="">
+    <service serviceId="500103001101" serviceVersion="V1" packageMode="XML" dataRouter="" valid=""/>
+  </consumer>
+</Authoritys>

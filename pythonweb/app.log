@@ -1,0 +1,1234 @@
+INFO|2020-07-14 16:04:43,134|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:04:43,142|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:04:43,152|connection.py|_connect:625|Thread-9|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-14 16:04:43,203|client.py|_session_callback:533|Thread-9|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:04:43,205|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-14 16:04:43,516|connection.py|_connect_attempt:591|Thread-9|Closing connection to 9.1.5.176:2181
+INFO|2020-07-14 16:04:43,517|client.py|_session_callback:537|Thread-9|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:04:43,519|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:04:43,521|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-14 16:04:44,336|db2_data_service.py|conn_db:32|Thread-6|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-14 16:04:45,144|db2_data_service.py|get_service_all_data:125|Thread-6|全部服务码:['300203000222']
+INFO|2020-07-14 16:04:45,227|db2_data_service.py|get_service_all_data:135|Thread-6|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000021045A7A1C8>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000021045A9B9C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000021045A9BB48>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000021045B00908>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000021045B16308>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000021045B2FA88>]}
+INFO|2020-07-14 16:04:45,228|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-14 16:04:45,232|esbservice.py|move_data:110|Thread-6|开始从主节点进行数据导出...
+INFO|2020-07-14 16:04:45,233|esbservice.py|import_zk_data:81|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-14 16:04:45,244|connection.py|_connect:625|Thread-12|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:04:45,274|client.py|_session_callback:533|Thread-12|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:04:45,275|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:04:45,403|esbservice.py|import_zk_data:84|Thread-6||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-14 16:04:45,412|connection.py|_connect_attempt:591|Thread-12|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:04:45,412|client.py|_session_callback:537|Thread-12|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:04:45,414|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:04:45,415|esbservice.py|import_db_data:89|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-14 16:04:45,416|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:04:45,422|db2_data_service.py|conn_db:32|Thread-6|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-14 16:04:45,741|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-14 16:04:45,742|esbservice.py|import_db_data:94|Thread-6||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-14 16:04:45,742|esbservice.py|move_data:120|Thread-6|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-14 16:04:48,727|connection.py|_connect:625|Thread-22|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:04:48,742|client.py|_session_callback:533|Thread-22|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:04:48,743|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:04:48,770|connection.py|_connect_attempt:591|Thread-22|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:04:48,770|client.py|_session_callback:537|Thread-22|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:04:48,772|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:04:48,825|esbservice.py|service_auth:152|Thread-6|9.1.5.22:2181,ABS 写入授权数据
+INFO|2020-07-14 16:04:48,825|esbservice.py|service_auth:154|Thread-6|9.1.5.22:2181,300203000222 服务已经在系统 ABS 总存在
+INFO|2020-07-14 16:04:49,595|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:04:49,598|db2_data_service.py|conn_db:32|Thread-6|创建数据库连接成功
+INFO|2020-07-14 16:04:49,643|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接
+ERROR|2020-07-14 16:04:52,279|operjava.py|terminate_op_auth:29|Thread-6|tmn_id:ABS002 zk_url:9.1.5.22:2181 port:1099 ip:9.1.6.247 num_str:400 system_name:ABS 
+INFO|2020-07-14 16:13:36,953|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:13:36,961|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:13:36,971|connection.py|_connect:625|Thread-9|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-14 16:13:36,992|client.py|_session_callback:533|Thread-9|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:13:36,995|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-14 16:13:37,220|connection.py|_connect_attempt:591|Thread-9|Closing connection to 9.1.5.176:2181
+INFO|2020-07-14 16:13:37,221|client.py|_session_callback:537|Thread-9|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:13:37,222|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:13:37,223|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-14 16:13:38,195|db2_data_service.py|conn_db:32|Thread-6|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-14 16:13:39,308|db2_data_service.py|get_service_all_data:125|Thread-6|全部服务码:['300203000222']
+INFO|2020-07-14 16:13:39,437|db2_data_service.py|get_service_all_data:135|Thread-6|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x000001C621897C48>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000001C6218C4D08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001C6218C4E88>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000001C6218F2808>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x000001C621909F48>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x000001C6219294C8>]}
+INFO|2020-07-14 16:13:39,439|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-14 16:13:39,446|esbservice.py|move_data:110|Thread-6|开始从主节点进行数据导出...
+INFO|2020-07-14 16:13:39,448|esbservice.py|import_zk_data:81|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-14 16:13:39,472|connection.py|_connect:625|Thread-12|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:13:39,493|client.py|_session_callback:533|Thread-12|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:13:39,495|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:13:39,646|esbservice.py|import_zk_data:84|Thread-6||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-14 16:13:39,658|connection.py|_connect_attempt:591|Thread-12|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:13:39,659|client.py|_session_callback:537|Thread-12|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:13:39,661|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:13:39,663|esbservice.py|import_db_data:89|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-14 16:13:39,664|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:13:39,671|db2_data_service.py|conn_db:32|Thread-6|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-14 16:13:39,999|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-14 16:13:40,001|esbservice.py|import_db_data:94|Thread-6||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-14 16:13:40,002|esbservice.py|move_data:120|Thread-6|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-14 16:13:42,466|connection.py|_connect:625|Thread-22|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:13:42,530|client.py|_session_callback:533|Thread-22|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:13:42,531|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:13:42,601|connection.py|_connect_attempt:591|Thread-22|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:13:42,602|client.py|_session_callback:537|Thread-22|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:13:42,603|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:13:42,662|esbservice.py|service_auth:152|Thread-6|9.1.5.22:2181,ABS 写入授权数据
+INFO|2020-07-14 16:13:42,662|esbservice.py|service_auth:154|Thread-6|9.1.5.22:2181,300203000222 服务已经在系统 ABS 总存在
+INFO|2020-07-14 16:13:47,937|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:13:47,942|db2_data_service.py|conn_db:32|Thread-6|创建数据库连接成功
+INFO|2020-07-14 16:13:48,045|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接
+INFO|2020-07-14 16:14:13,998|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:14:14,031|connection.py|_connect:625|Thread-33|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-14 16:14:14,050|client.py|_session_callback:533|Thread-33|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:14:14,055|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-14 16:14:14,460|connection.py|_connect_attempt:591|Thread-33|Closing connection to 9.1.5.176:2181
+INFO|2020-07-14 16:14:14,464|client.py|_session_callback:537|Thread-33|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:14:14,471|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:14:14,473|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-14 16:14:14,493|db2_data_service.py|conn_db:32|Thread-6|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-14 16:14:14,635|db2_data_service.py|get_service_all_data:125|Thread-6|全部服务码:['300203000222']
+INFO|2020-07-14 16:14:14,870|db2_data_service.py|get_service_all_data:135|Thread-6|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x000001C621926EC8>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000001C621449E08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001C621A11308>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000001C62081A4C8>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x000001C62081A648>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x000001C62081A788>]}
+INFO|2020-07-14 16:14:14,875|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-14 16:14:14,886|esbservice.py|move_data:110|Thread-6|开始从主节点进行数据导出...
+INFO|2020-07-14 16:14:14,892|esbservice.py|import_zk_data:81|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-14 16:14:14,920|connection.py|_connect:625|Thread-36|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:14:14,953|client.py|_session_callback:533|Thread-36|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:14:14,958|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:14:15,267|esbservice.py|import_zk_data:84|Thread-6||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-14 16:14:15,284|connection.py|_connect_attempt:591|Thread-36|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:14:15,290|client.py|_session_callback:537|Thread-36|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:14:15,297|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:14:15,303|esbservice.py|import_db_data:89|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-14 16:14:15,308|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:14:15,337|db2_data_service.py|conn_db:32|Thread-6|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-14 16:14:16,206|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-14 16:14:16,210|esbservice.py|import_db_data:94|Thread-6||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-14 16:14:16,213|esbservice.py|move_data:120|Thread-6|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-14 16:14:20,487|connection.py|_connect:625|Thread-46|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:14:20,523|client.py|_session_callback:533|Thread-46|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:14:20,525|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:14:20,569|connection.py|_connect_attempt:591|Thread-46|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:14:20,570|client.py|_session_callback:537|Thread-46|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:14:20,573|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:14:20,977|esbservice.py|service_auth:152|Thread-6|9.1.5.22:2181,ABS 写入授权数据
+INFO|2020-07-14 16:14:20,979|esbservice.py|service_auth:154|Thread-6|9.1.5.22:2181,300203000222 服务已经在系统 ABS 总存在
+INFO|2020-07-14 16:14:22,081|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:14:22,100|db2_data_service.py|conn_db:32|Thread-6|创建数据库连接成功
+INFO|2020-07-14 16:14:22,185|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接
+ERROR|2020-07-14 16:16:17,431|log.py|log_response:228|Thread-6|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/javaTest.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-14 16:16:47,741|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:16:47,749|esbservice.py|init:130|Thread-6|===========配置加载成功===========
+INFO|2020-07-14 16:16:47,761|connection.py|_connect:625|Thread-9|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-14 16:16:47,774|client.py|_session_callback:533|Thread-9|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:16:47,776|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-14 16:16:47,944|connection.py|_connect_attempt:591|Thread-9|Closing connection to 9.1.5.176:2181
+INFO|2020-07-14 16:16:47,946|client.py|_session_callback:537|Thread-9|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:16:47,948|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:16:47,949|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-14 16:16:48,925|db2_data_service.py|conn_db:32|Thread-6|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-14 16:16:49,980|db2_data_service.py|get_service_all_data:125|Thread-6|全部服务码:['300203000222']
+INFO|2020-07-14 16:16:50,103|db2_data_service.py|get_service_all_data:135|Thread-6|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000018F92847748>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000018F9287A588>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000018F9287AA08>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000018F928A63C8>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000018F928C1048>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000018F928DCF88>]}
+INFO|2020-07-14 16:16:50,103|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-14 16:16:50,115|esbservice.py|move_data:110|Thread-6|开始从主节点进行数据导出...
+INFO|2020-07-14 16:16:50,116|esbservice.py|import_zk_data:81|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-14 16:16:50,123|connection.py|_connect:625|Thread-12|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:16:50,137|client.py|_session_callback:533|Thread-12|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:16:50,138|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:16:50,371|esbservice.py|import_zk_data:84|Thread-6||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-14 16:16:50,393|connection.py|_connect_attempt:591|Thread-12|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:16:50,393|client.py|_session_callback:537|Thread-12|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:16:50,395|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:16:50,396|esbservice.py|import_db_data:89|Thread-6||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-14 16:16:50,396|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:16:50,403|db2_data_service.py|conn_db:32|Thread-6|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-14 16:16:50,883|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-14 16:16:50,884|esbservice.py|import_db_data:94|Thread-6||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-14 16:16:50,884|esbservice.py|move_data:120|Thread-6|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-14 16:16:58,268|connection.py|_connect:625|Thread-23|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-14 16:16:58,285|client.py|_session_callback:533|Thread-23|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-14 16:16:58,286|zkClient.py|__init__:23|Thread-6|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-14 16:16:58,313|connection.py|_connect_attempt:591|Thread-23|Closing connection to 9.1.5.22:2181
+INFO|2020-07-14 16:16:58,315|client.py|_session_callback:537|Thread-23|Zookeeper session closed, state: CLOSED
+INFO|2020-07-14 16:16:58,316|zkClient.py|close:33|Thread-6|断开zk连接...
+INFO|2020-07-14 16:16:58,360|esbservice.py|service_auth:152|Thread-6|9.1.5.22:2181,ABS 写入授权数据
+INFO|2020-07-14 16:16:58,361|esbservice.py|service_auth:154|Thread-6|9.1.5.22:2181,300203000222 服务已经在系统 ABS 总存在
+INFO|2020-07-14 16:16:59,706|db2_data_service.py|conn_db:27|Thread-6|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-14 16:16:59,711|db2_data_service.py|conn_db:32|Thread-6|创建数据库连接成功
+INFO|2020-07-14 16:16:59,856|db2_data_service.py|dis_connect:194|Thread-6|关闭环境数据库连接
+INFO|2020-07-14 16:20:51,691|esbservice.py|service_auth:161|Thread-6|更新zookeeper 授权数据成功，更新的系统：ABS
+INFO|2020-07-14 16:25:18,605|autoreload.py|trigger_reload:222|MainThread|D:\works\python\pythonweb\zktools\javatools\operjava.py changed, reloading.
+INFO|2020-07-15 14:59:36,945|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-15 14:59:36,990|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-15 14:59:36,993|connection.py|_connect:625|Thread-4|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-15 14:59:37,002|client.py|_session_callback:533|Thread-4|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:37,002|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-15 14:59:37,104|connection.py|_connect_attempt:591|Thread-4|Closing connection to 9.1.5.171:2181
+INFO|2020-07-15 14:59:37,104|client.py|_session_callback:537|Thread-4|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:37,105|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:37,105|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-15 14:59:37,747|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-15 14:59:38,425|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['300103000102V1']
+INFO|2020-07-15 14:59:38,469|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EACF9288>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAD10708>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAD10848>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAD10908>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAD10988>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x00000247EAD28248>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EAD342C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EAD36248>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EAD362C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EAD36348>], 'sIdenInv': None}
+INFO|2020-07-15 14:59:38,469|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-15 14:59:38,472|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-15 14:59:38,473|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT1测试环境导入zk配置======|||||
+INFO|2020-07-15 14:59:38,475|connection.py|_connect:625|Thread-7|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 14:59:38,491|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:38,491|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 14:59:38,604|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT1测试环境导入zk配置成功,新增2条,更新3条======|||||
+INFO|2020-07-15 14:59:38,610|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 14:59:38,611|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:38,612|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:38,612|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT1测试环境导入DB数据======|||||
+INFO|2020-07-15 14:59:38,612|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-15 14:59:38,613|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-15 14:59:38,949|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-15 14:59:38,950|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT1测试环境导入DB数据完成======|||||
+INFO|2020-07-15 14:59:38,950|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT1测试环境数据同步成功
+INFO|2020-07-15 14:59:39,018|connection.py|_connect:625|Thread-10|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 14:59:39,055|client.py|_session_callback:533|Thread-10|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:39,055|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 14:59:39,078|connection.py|_connect_attempt:591|Thread-10|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 14:59:39,078|client.py|_session_callback:537|Thread-10|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:39,079|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:39,082|esbservice.py|service_auth:152|Thread-1|9.1.5.23:2181,VASP 写入授权数据
+INFO|2020-07-15 14:59:39,084|connection.py|_connect:625|Thread-13|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 14:59:39,096|client.py|_session_callback:533|Thread-13|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:39,096|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 14:59:39,113|connection.py|_connect_attempt:591|Thread-13|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 14:59:39,113|client.py|_session_callback:537|Thread-13|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:39,113|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:39,114|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-15 14:59:39,115|db2_data_service.py|conn_db:32|Thread-1|创建数据库连接成功
+INFO|2020-07-15 14:59:39,163|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接
+ERROR|2020-07-15 14:59:39,501|operjava.py|terminate_op_auth:30|Thread-1|tmn_id:VASP001 zk_url:9.1.5.23:2181 port:1099 ip:9.1.8.171 num_str:0 system_name:VASP , Class com.guo.auth.JavaTools is not found
+
+INFO|2020-07-15 14:59:39,507|esbservice.py|service_auth:161|Thread-1|更新zookeeper 授权数据成功，更新的系统：VASP
+INFO|2020-07-15 14:59:39,509|connection.py|_connect:625|Thread-16|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 14:59:39,536|client.py|_session_callback:533|Thread-16|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:39,537|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 14:59:39,564|connection.py|_connect_attempt:591|Thread-16|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 14:59:39,564|client.py|_session_callback:537|Thread-16|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:39,565|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:39,566|esbservice.py|service_auth:152|Thread-1|9.1.5.23:2181,CRMS 写入授权数据
+INFO|2020-07-15 14:59:39,568|connection.py|_connect:625|Thread-19|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 14:59:39,582|client.py|_session_callback:533|Thread-19|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 14:59:39,582|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 14:59:39,610|connection.py|_connect_attempt:591|Thread-19|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 14:59:39,610|client.py|_session_callback:537|Thread-19|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 14:59:39,611|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-15 14:59:39,611|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-15 14:59:39,613|db2_data_service.py|conn_db:32|Thread-1|创建数据库连接成功
+INFO|2020-07-15 14:59:39,660|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接
+ERROR|2020-07-15 14:59:39,738|log.py|log_response:228|Thread-1|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-15 15:54:19,075|esbservice.py|init:130|Thread-20|===========配置加载成功===========
+INFO|2020-07-15 15:54:19,079|connection.py|_connect:625|Thread-23|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 15:54:19,086|client.py|_session_callback:533|Thread-23|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 15:54:19,087|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 15:54:19,251|connection.py|_connect_attempt:591|Thread-23|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 15:54:19,251|client.py|_session_callback:537|Thread-23|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 15:54:19,251|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-15 15:54:19,252|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 15:54:19,253|db2_data_service.py|conn_db:32|Thread-20|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-15 15:54:19,332|db2_data_service.py|get_service_all_data:125|Thread-20|全部服务码:['300203000217', '300201000114']
+INFO|2020-07-15 15:54:19,396|db2_data_service.py|get_service_all_data:135|Thread-20|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EB108CC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EB1086C8>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA514448>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA6C9288>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA6C9248>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA6C9088>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EB0E3808>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EB0E3F88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EB0E35C8>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x00000247EB0EB508>, <zktools.orm.ServiceReg.ServiceReg object at 0x00000247EB0EB588>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EB1127C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DCA08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DCDC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DC848>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DC108>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DCE48>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EA5DC888>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFBC08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFB9C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFBA48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFBD08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFB1C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFB408>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EADFB688>]}
+INFO|2020-07-15 15:54:19,396|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-15 15:54:19,403|esbservice.py|move_data:110|Thread-20|开始从主节点进行数据导出...
+INFO|2020-07-15 15:54:19,403|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT2测试环境导入zk配置======|||||
+INFO|2020-07-15 15:54:19,407|connection.py|_connect:625|Thread-26|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-15 15:54:19,416|client.py|_session_callback:533|Thread-26|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 15:54:19,416|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-15 15:54:19,526|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT2测试环境导入zk配置成功,新增0条,更新10条======|||||
+INFO|2020-07-15 15:54:19,530|connection.py|_connect_attempt:591|Thread-26|Closing connection to 9.1.5.171:2181
+INFO|2020-07-15 15:54:19,531|client.py|_session_callback:537|Thread-26|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 15:54:19,531|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-15 15:54:19,532|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT2测试环境导入DB数据======|||||
+INFO|2020-07-15 15:54:19,532|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-15 15:54:19,533|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-15 15:54:21,147|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-15 15:54:21,148|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT2测试环境导入DB数据完成======|||||
+INFO|2020-07-15 15:54:21,148|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT2测试环境数据同步成功
+INFO|2020-07-15 15:54:21,218|connection.py|_connect:625|Thread-29|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-15 15:54:21,256|client.py|_session_callback:533|Thread-29|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 15:54:21,256|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-15 15:54:21,295|connection.py|_connect_attempt:591|Thread-29|Closing connection to 9.1.5.171:2181
+INFO|2020-07-15 15:54:21,295|client.py|_session_callback:537|Thread-29|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 15:54:21,296|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-15 15:54:21,332|esbservice.py|service_auth:152|Thread-20|9.1.5.171:2181,CBSP 写入授权数据
+INFO|2020-07-15 15:54:21,332|esbservice.py|service_auth:154|Thread-20|9.1.5.171:2181,300203000217 服务已经在系统 CBSP 总存在
+INFO|2020-07-15 15:54:21,332|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-15 15:54:21,333|db2_data_service.py|conn_db:32|Thread-20|创建数据库连接成功
+INFO|2020-07-15 15:54:21,402|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接
+ERROR|2020-07-15 15:54:21,466|log.py|log_response:228|Thread-20|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-15 16:33:58,637|esbservice.py|init:130|Thread-30|===========配置加载成功===========
+INFO|2020-07-15 16:33:58,641|connection.py|_connect:625|Thread-33|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-15 16:33:58,698|client.py|_session_callback:533|Thread-33|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 16:33:58,699|zkClient.py|__init__:23|Thread-30|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-15 16:33:59,112|connection.py|_connect_attempt:591|Thread-33|Closing connection to 9.1.5.23:2181
+INFO|2020-07-15 16:33:59,112|client.py|_session_callback:537|Thread-33|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 16:33:59,113|zkClient.py|close:33|Thread-30|断开zk连接...
+INFO|2020-07-15 16:33:59,113|db2_data_service.py|conn_db:27|Thread-30|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-15 16:33:59,114|db2_data_service.py|conn_db:32|Thread-30|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-15 16:33:59,201|db2_data_service.py|get_service_all_data:125|Thread-30|全部服务码:['300302001204']
+INFO|2020-07-15 16:33:59,267|db2_data_service.py|get_service_all_data:135|Thread-30|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EADC0DC8>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA1F7348>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA5D4BC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA5D4F08>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x00000247EA4C38C8>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EACCD7C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EACCD348>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EACCD1C8>]}
+INFO|2020-07-15 16:33:59,267|db2_data_service.py|dis_connect:194|Thread-30|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-15 16:33:59,271|esbservice.py|move_data:110|Thread-30|开始从主节点进行数据导出...
+INFO|2020-07-15 16:33:59,272|esbservice.py|import_zk_data:81|Thread-30||||||======开始向IBP-SIT测试环境(互金)导入zk配置======|||||
+INFO|2020-07-15 16:33:59,274|connection.py|_connect:625|Thread-36|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 16:33:59,283|client.py|_session_callback:533|Thread-36|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 16:33:59,284|zkClient.py|__init__:23|Thread-30|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 16:33:59,343|esbservice.py|import_zk_data:84|Thread-30||||||======IBP-SIT测试环境(互金)导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-15 16:33:59,351|connection.py|_connect_attempt:591|Thread-36|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 16:33:59,352|client.py|_session_callback:537|Thread-36|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 16:33:59,352|zkClient.py|close:33|Thread-30|断开zk连接...
+INFO|2020-07-15 16:33:59,352|esbservice.py|import_db_data:89|Thread-30||||||======开始向IBP-SIT测试环境(互金)导入DB数据======|||||
+INFO|2020-07-15 16:33:59,353|db2_data_service.py|conn_db:27|Thread-30|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 16:33:59,368|db2_data_service.py|conn_db:32|Thread-30|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-15 16:33:59,696|db2_data_service.py|dis_connect:194|Thread-30|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-15 16:33:59,696|esbservice.py|import_db_data:94|Thread-30||||||======向IBP-SIT测试环境(互金)导入DB数据完成======|||||
+INFO|2020-07-15 16:33:59,697|esbservice.py|move_data:120|Thread-30|======环境：IBP-SIT测试环境(互金)数据同步成功
+INFO|2020-07-15 16:33:59,765|connection.py|_connect:625|Thread-39|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 16:33:59,774|client.py|_session_callback:533|Thread-39|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 16:33:59,774|zkClient.py|__init__:23|Thread-30|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 16:33:59,794|connection.py|_connect_attempt:591|Thread-39|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 16:33:59,795|client.py|_session_callback:537|Thread-39|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 16:33:59,795|zkClient.py|close:33|Thread-30|断开zk连接...
+INFO|2020-07-15 16:33:59,797|esbservice.py|service_auth:152|Thread-30|9.1.5.176:2181,BSMP 写入授权数据
+INFO|2020-07-15 16:33:59,800|connection.py|_connect:625|Thread-42|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 16:33:59,820|client.py|_session_callback:533|Thread-42|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 16:33:59,820|zkClient.py|__init__:23|Thread-30|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 16:33:59,837|connection.py|_connect_attempt:591|Thread-42|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 16:33:59,837|client.py|_session_callback:537|Thread-42|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 16:33:59,838|zkClient.py|close:33|Thread-30|断开zk连接...
+INFO|2020-07-15 16:33:59,838|db2_data_service.py|conn_db:27|Thread-30|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 16:33:59,839|db2_data_service.py|conn_db:32|Thread-30|创建数据库连接成功
+INFO|2020-07-15 16:33:59,881|db2_data_service.py|dis_connect:194|Thread-30|关闭环境数据库连接
+INFO|2020-07-15 16:33:59,881|esbservice.py|service_auth:161|Thread-30|更新zookeeper 授权数据成功，更新的系统：BSMP
+INFO|2020-07-15 16:33:59,884|connection.py|_connect:625|Thread-45|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 16:33:59,908|client.py|_session_callback:533|Thread-45|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 16:33:59,909|zkClient.py|__init__:23|Thread-30|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 16:33:59,936|connection.py|_connect_attempt:591|Thread-45|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 16:33:59,936|client.py|_session_callback:537|Thread-45|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 16:33:59,937|zkClient.py|close:33|Thread-30|断开zk连接...
+INFO|2020-07-15 16:33:59,939|esbservice.py|service_auth:152|Thread-30|9.1.5.176:2181,STM 写入授权数据
+INFO|2020-07-15 16:33:59,940|esbservice.py|service_auth:154|Thread-30|9.1.5.176:2181,300302001204 服务已经在系统 STM 总存在
+INFO|2020-07-15 16:33:59,940|db2_data_service.py|conn_db:27|Thread-30|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 16:33:59,941|db2_data_service.py|conn_db:32|Thread-30|创建数据库连接成功
+INFO|2020-07-15 16:34:00,008|db2_data_service.py|dis_connect:194|Thread-30|关闭环境数据库连接
+ERROR|2020-07-15 16:34:00,076|log.py|log_response:228|Thread-30|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-15 19:17:01,138|esbservice.py|init:130|Thread-46|===========配置加载成功===========
+INFO|2020-07-15 19:17:01,141|connection.py|_connect:625|Thread-49|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 19:17:01,150|client.py|_session_callback:533|Thread-49|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:01,150|zkClient.py|__init__:23|Thread-46|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 19:17:01,363|connection.py|_connect_attempt:591|Thread-49|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 19:17:01,363|client.py|_session_callback:537|Thread-49|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:01,364|zkClient.py|close:33|Thread-46|断开zk连接...
+INFO|2020-07-15 19:17:01,364|db2_data_service.py|conn_db:27|Thread-46|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 19:17:01,365|db2_data_service.py|conn_db:32|Thread-46|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-15 19:17:01,431|db2_data_service.py|get_service_all_data:125|Thread-46|全部服务码:['500103002109', '500103002108']
+INFO|2020-07-15 19:17:01,480|db2_data_service.py|get_service_all_data:135|Thread-46|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EAD96288>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EAD96988>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAEC8588>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EAEC8248>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA4E6A08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247EA4B6D48>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x00000247EA4B1748>, <zktools.orm.ServiceReg.ServiceReg object at 0x00000247EB10D0C8>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EB1262C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247EB118948>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EB0EDF48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EB0ED608>]}
+INFO|2020-07-15 19:17:01,481|db2_data_service.py|dis_connect:194|Thread-46|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-15 19:17:01,484|esbservice.py|move_data:110|Thread-46|开始从主节点进行数据导出...
+INFO|2020-07-15 19:17:01,485|esbservice.py|import_zk_data:81|Thread-46||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-15 19:17:01,489|connection.py|_connect:625|Thread-52|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-15 19:17:01,511|client.py|_session_callback:533|Thread-52|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:01,512|zkClient.py|__init__:23|Thread-46|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-15 19:17:01,756|esbservice.py|import_zk_data:84|Thread-46||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增10条,更新0条======|||||
+INFO|2020-07-15 19:17:01,763|connection.py|_connect_attempt:591|Thread-52|Closing connection to 9.1.5.22:2181
+INFO|2020-07-15 19:17:01,763|client.py|_session_callback:537|Thread-52|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:01,765|zkClient.py|close:33|Thread-46|断开zk连接...
+INFO|2020-07-15 19:17:01,765|esbservice.py|import_db_data:89|Thread-46||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-15 19:17:01,765|db2_data_service.py|conn_db:27|Thread-46|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-15 19:17:01,767|db2_data_service.py|conn_db:32|Thread-46|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-15 19:17:02,210|db2_data_service.py|dis_connect:194|Thread-46|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-15 19:17:02,211|esbservice.py|import_db_data:94|Thread-46||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-15 19:17:02,211|esbservice.py|move_data:120|Thread-46|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-15 19:17:02,268|connection.py|_connect:625|Thread-55|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-15 19:17:02,293|client.py|_session_callback:533|Thread-55|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:02,293|zkClient.py|__init__:23|Thread-46|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-15 19:17:02,310|connection.py|_connect_attempt:591|Thread-55|Closing connection to 9.1.5.22:2181
+INFO|2020-07-15 19:17:02,311|client.py|_session_callback:537|Thread-55|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:02,311|zkClient.py|close:33|Thread-46|断开zk连接...
+INFO|2020-07-15 19:17:02,312|esbservice.py|service_auth:152|Thread-46|9.1.5.22:2181,IMPP 写入授权数据
+INFO|2020-07-15 19:17:02,314|connection.py|_connect:625|Thread-58|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-15 19:17:02,327|client.py|_session_callback:533|Thread-58|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:02,328|zkClient.py|__init__:23|Thread-46|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-15 19:17:02,356|connection.py|_connect_attempt:591|Thread-58|Closing connection to 9.1.5.22:2181
+INFO|2020-07-15 19:17:02,357|client.py|_session_callback:537|Thread-58|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:02,358|zkClient.py|close:33|Thread-46|断开zk连接...
+INFO|2020-07-15 19:17:02,358|db2_data_service.py|conn_db:27|Thread-46|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-15 19:17:02,359|db2_data_service.py|conn_db:32|Thread-46|创建数据库连接成功
+INFO|2020-07-15 19:17:02,401|db2_data_service.py|dis_connect:194|Thread-46|关闭环境数据库连接
+ERROR|2020-07-15 19:17:02,484|log.py|log_response:228|Thread-46|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-15 19:17:05,670|esbservice.py|init:130|Thread-59|===========配置加载成功===========
+INFO|2020-07-15 19:17:05,674|connection.py|_connect:625|Thread-62|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-15 19:17:05,682|client.py|_session_callback:533|Thread-62|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:05,682|zkClient.py|__init__:23|Thread-59|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-15 19:17:06,032|connection.py|_connect_attempt:591|Thread-62|Closing connection to 9.1.5.176:2181
+INFO|2020-07-15 19:17:06,032|client.py|_session_callback:537|Thread-62|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:06,033|zkClient.py|close:33|Thread-59|断开zk连接...
+INFO|2020-07-15 19:17:06,033|db2_data_service.py|conn_db:27|Thread-59|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-15 19:17:06,035|db2_data_service.py|conn_db:32|Thread-59|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-15 19:17:06,093|db2_data_service.py|get_service_all_data:125|Thread-59|全部服务码:['500103002109', '500103002108']
+INFO|2020-07-15 19:17:06,140|db2_data_service.py|get_service_all_data:135|Thread-59|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EACE13C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x00000247EACE1C48>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247FDCEE448>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247FDCEE5C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247FDCEE6C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x00000247FDCEEA08>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x00000247EADC0B08>, <zktools.orm.ServiceReg.ServiceReg object at 0x00000247FDD0C408>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247FDD0CBC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x00000247FDD0C788>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247FDD0CE08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x00000247EB0E3D48>]}
+INFO|2020-07-15 19:17:06,141|db2_data_service.py|dis_connect:194|Thread-59|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-15 19:17:06,145|esbservice.py|move_data:110|Thread-59|开始从主节点进行数据导出...
+INFO|2020-07-15 19:17:06,145|esbservice.py|import_zk_data:81|Thread-59||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-15 19:17:06,148|connection.py|_connect:625|Thread-65|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-15 19:17:06,177|client.py|_session_callback:533|Thread-65|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:06,177|zkClient.py|__init__:23|Thread-59|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-15 19:17:06,417|esbservice.py|import_zk_data:84|Thread-59||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新10条======|||||
+INFO|2020-07-15 19:17:06,437|connection.py|_connect_attempt:591|Thread-65|Closing connection to 9.1.5.22:2181
+INFO|2020-07-15 19:17:06,437|client.py|_session_callback:537|Thread-65|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:06,437|zkClient.py|close:33|Thread-59|断开zk连接...
+INFO|2020-07-15 19:17:06,438|esbservice.py|import_db_data:89|Thread-59||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-15 19:17:06,438|db2_data_service.py|conn_db:27|Thread-59|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-15 19:17:06,440|db2_data_service.py|conn_db:32|Thread-59|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-15 19:17:06,788|db2_data_service.py|dis_connect:194|Thread-59|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-15 19:17:06,788|esbservice.py|import_db_data:94|Thread-59||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-15 19:17:06,788|esbservice.py|move_data:120|Thread-59|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-15 19:17:06,831|connection.py|_connect:625|Thread-68|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-15 19:17:06,844|client.py|_session_callback:533|Thread-68|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-15 19:17:06,845|zkClient.py|__init__:23|Thread-59|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-15 19:17:06,863|connection.py|_connect_attempt:591|Thread-68|Closing connection to 9.1.5.22:2181
+INFO|2020-07-15 19:17:06,863|client.py|_session_callback:537|Thread-68|Zookeeper session closed, state: CLOSED
+INFO|2020-07-15 19:17:06,864|zkClient.py|close:33|Thread-59|断开zk连接...
+INFO|2020-07-15 19:17:06,870|esbservice.py|service_auth:152|Thread-59|9.1.5.22:2181,IMPP 写入授权数据
+INFO|2020-07-15 19:17:06,870|esbservice.py|service_auth:154|Thread-59|9.1.5.22:2181,500103002109 服务已经在系统 IMPP 总存在
+INFO|2020-07-15 19:17:06,870|db2_data_service.py|conn_db:27|Thread-59|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-15 19:17:06,873|db2_data_service.py|conn_db:32|Thread-59|创建数据库连接成功
+INFO|2020-07-15 19:17:06,912|db2_data_service.py|dis_connect:194|Thread-59|关闭环境数据库连接
+ERROR|2020-07-15 19:17:06,990|log.py|log_response:228|Thread-59|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-16 11:48:25,836|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-16 11:48:25,838|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-16 11:48:25,842|connection.py|_connect:625|Thread-4|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-16 11:48:25,857|client.py|_session_callback:533|Thread-4|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:25,858|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-16 11:48:25,937|connection.py|_connect_attempt:591|Thread-4|Closing connection to 9.1.5.23:2181
+INFO|2020-07-16 11:48:25,937|client.py|_session_callback:537|Thread-4|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:25,938|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:25,938|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-16 11:48:26,625|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,312|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['30010100202']
+INFO|2020-07-16 11:48:27,369|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': None, 'sCP': None, 'sReg': None, 'sAuth': None, 'sIdenInv': None}
+INFO|2020-07-16 11:48:27,369|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-16 11:48:27,371|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-16 11:48:27,372|esbservice.py|import_zk_data:81|Thread-1||||||======开始向DEV-SIT测试环境(开发)导入zk配置======|||||
+INFO|2020-07-16 11:48:27,376|connection.py|_connect:625|Thread-7|Connecting to 9.1.6.42(9.1.6.42):2183, use_ssl: False
+INFO|2020-07-16 11:48:27,391|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,392|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.6.42:2183成功
+INFO|2020-07-16 11:48:27,397|esbservice.py|import_zk_data:84|Thread-1||||||======DEV-SIT测试环境(开发)导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,456|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.6.42:2183
+INFO|2020-07-16 11:48:27,457|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,458|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,458|esbservice.py|import_db_data:89|Thread-1||||||======开始向DEV-SIT测试环境(开发)导入DB数据======|||||
+INFO|2020-07-16 11:48:27,458|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenkf
+INFO|2020-07-16 11:48:27,459|db2_data_service.py|conn_db:32|Thread-1|创建DEV-SIT测试环境(开发)数据库连接成功
+INFO|2020-07-16 11:48:27,460|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接DEV-SIT测试环境(开发)
+INFO|2020-07-16 11:48:27,460|esbservice.py|import_db_data:94|Thread-1||||||======向DEV-SIT测试环境(开发)导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,461|esbservice.py|move_data:120|Thread-1|======环境：DEV-SIT测试环境(开发)数据同步成功
+INFO|2020-07-16 11:48:27,461|esbservice.py|import_zk_data:81|Thread-1||||||======开始向IBP-SIT测试环境(互金)导入zk配置======|||||
+INFO|2020-07-16 11:48:27,464|connection.py|_connect:625|Thread-10|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,471|client.py|_session_callback:533|Thread-10|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,471|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-16 11:48:27,475|esbservice.py|import_zk_data:84|Thread-1||||||======IBP-SIT测试环境(互金)导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,478|connection.py|_connect_attempt:591|Thread-10|Closing connection to 9.1.5.176:2181
+INFO|2020-07-16 11:48:27,479|client.py|_session_callback:537|Thread-10|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,480|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,480|esbservice.py|import_db_data:89|Thread-1||||||======开始向IBP-SIT测试环境(互金)导入DB数据======|||||
+INFO|2020-07-16 11:48:27,480|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-16 11:48:27,482|db2_data_service.py|conn_db:32|Thread-1|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-16 11:48:27,482|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-16 11:48:27,482|esbservice.py|import_db_data:94|Thread-1||||||======向IBP-SIT测试环境(互金)导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,483|esbservice.py|move_data:120|Thread-1|======环境：IBP-SIT测试环境(互金)数据同步成功
+INFO|2020-07-16 11:48:27,483|esbservice.py|import_zk_data:81|Thread-1||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-16 11:48:27,489|connection.py|_connect:625|Thread-13|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,530|client.py|_session_callback:533|Thread-13|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,531|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-16 11:48:27,535|esbservice.py|import_zk_data:84|Thread-1||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,553|connection.py|_connect_attempt:591|Thread-13|Closing connection to 9.1.5.22:2181
+INFO|2020-07-16 11:48:27,553|client.py|_session_callback:537|Thread-13|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,554|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,554|esbservice.py|import_db_data:89|Thread-1||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-16 11:48:27,554|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-16 11:48:27,555|db2_data_service.py|conn_db:32|Thread-1|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-16 11:48:27,556|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-16 11:48:27,556|esbservice.py|import_db_data:94|Thread-1||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,556|esbservice.py|move_data:120|Thread-1|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-16 11:48:27,556|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT2测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,561|connection.py|_connect:625|Thread-16|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,581|client.py|_session_callback:533|Thread-16|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,582|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-16 11:48:27,586|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT2测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,591|connection.py|_connect_attempt:591|Thread-16|Closing connection to 9.1.5.171:2181
+INFO|2020-07-16 11:48:27,592|client.py|_session_callback:537|Thread-16|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,592|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,593|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT2测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,593|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-16 11:48:27,594|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,595|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-16 11:48:27,595|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT2测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,595|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT2测试环境数据同步成功
+INFO|2020-07-16 11:48:27,596|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT3测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,598|connection.py|_connect:625|Thread-19|Connecting to 9.1.5.24(9.1.5.24):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,611|client.py|_session_callback:533|Thread-19|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,611|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.24:2181成功
+INFO|2020-07-16 11:48:27,616|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT3测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,622|connection.py|_connect_attempt:591|Thread-19|Closing connection to 9.1.5.24:2181
+INFO|2020-07-16 11:48:27,622|client.py|_session_callback:537|Thread-19|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,623|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,623|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT3测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,623|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat3
+INFO|2020-07-16 11:48:27,624|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT3测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,625|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT3测试环境
+INFO|2020-07-16 11:48:27,625|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT3测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,626|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT3测试环境数据同步成功
+INFO|2020-07-16 11:48:27,626|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT4测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,629|connection.py|_connect:625|Thread-22|Connecting to 9.1.8.216(9.1.8.216):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,649|client.py|_session_callback:533|Thread-22|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,650|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.8.216:2181成功
+INFO|2020-07-16 11:48:27,652|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT4测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,655|connection.py|_connect_attempt:591|Thread-22|Closing connection to 9.1.8.216:2181
+INFO|2020-07-16 11:48:27,655|client.py|_session_callback:537|Thread-22|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,656|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,656|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT4测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,657|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccendb
+INFO|2020-07-16 11:48:27,658|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT4测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,658|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT4测试环境
+INFO|2020-07-16 11:48:27,658|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT4测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,659|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT4测试环境数据同步成功
+INFO|2020-07-16 11:48:27,659|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT5测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,661|connection.py|_connect:625|Thread-25|Connecting to 9.1.5.40(9.1.5.40):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,671|client.py|_session_callback:533|Thread-25|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,671|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.40:2181成功
+INFO|2020-07-16 11:48:27,675|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT5测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,679|connection.py|_connect_attempt:591|Thread-25|Closing connection to 9.1.5.40:2181
+INFO|2020-07-16 11:48:27,679|client.py|_session_callback:537|Thread-25|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,680|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,681|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT5测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,681|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.41:60000/esccen
+INFO|2020-07-16 11:48:27,682|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT5测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,682|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT5测试环境
+INFO|2020-07-16 11:48:27,682|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT5测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,682|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT5测试环境数据同步成功
+INFO|2020-07-16 11:48:27,683|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT7测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,687|connection.py|_connect:625|Thread-28|Connecting to 9.1.8.25(9.1.8.25):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,706|client.py|_session_callback:533|Thread-28|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,706|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.8.25:2181成功
+INFO|2020-07-16 11:48:27,711|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT7测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,718|connection.py|_connect_attempt:591|Thread-28|Closing connection to 9.1.8.25:2181
+INFO|2020-07-16 11:48:27,718|client.py|_session_callback:537|Thread-28|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,719|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,719|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT7测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,719|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.203:60000/esccenu7
+INFO|2020-07-16 11:48:27,720|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT7测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,721|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT7测试环境
+INFO|2020-07-16 11:48:27,721|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT7测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,721|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT7测试环境数据同步成功
+INFO|2020-07-16 11:48:27,721|esbservice.py|import_zk_data:81|Thread-1||||||======开始向电票测试环境导入zk配置======|||||
+INFO|2020-07-16 11:48:27,724|connection.py|_connect:625|Thread-31|Connecting to 9.1.8.167(9.1.8.167):2181, use_ssl: False
+INFO|2020-07-16 11:48:27,729|client.py|_session_callback:533|Thread-31|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-16 11:48:27,730|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.8.167:2181成功
+INFO|2020-07-16 11:48:27,733|esbservice.py|import_zk_data:84|Thread-1||||||======电票测试环境导入zk配置成功,新增0条,更新0条======|||||
+INFO|2020-07-16 11:48:27,736|connection.py|_connect_attempt:591|Thread-31|Closing connection to 9.1.8.167:2181
+INFO|2020-07-16 11:48:27,737|client.py|_session_callback:537|Thread-31|Zookeeper session closed, state: CLOSED
+INFO|2020-07-16 11:48:27,737|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-16 11:48:27,738|esbservice.py|import_db_data:89|Thread-1||||||======开始向电票测试环境导入DB数据======|||||
+INFO|2020-07-16 11:48:27,738|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccenu5
+INFO|2020-07-16 11:48:27,739|db2_data_service.py|conn_db:32|Thread-1|创建电票测试环境数据库连接成功
+INFO|2020-07-16 11:48:27,739|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接电票测试环境
+INFO|2020-07-16 11:48:27,740|esbservice.py|import_db_data:94|Thread-1||||||======向电票测试环境导入DB数据完成======|||||
+INFO|2020-07-16 11:48:27,740|esbservice.py|move_data:120|Thread-1|======环境：电票测试环境数据同步成功
+INFO|2020-07-17 08:34:07,534|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 08:34:07,536|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 08:34:07,539|connection.py|_connect:625|Thread-4|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-17 08:34:10,551|client.py|_session_callback:533|Thread-4|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:10,551|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-17 08:34:11,851|connection.py|_connect_attempt:591|Thread-4|Closing connection to 9.1.5.176:2181
+INFO|2020-07-17 08:34:11,852|client.py|_session_callback:537|Thread-4|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:11,852|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:11,853|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-17 08:34:12,497|db2_data_service.py|conn_db:32|Thread-1|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-17 08:34:13,499|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['500103002401', '500103002402', '500103002403', '500103002404']
+INFO|2020-07-17 08:34:13,615|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E90468E9C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E90468E848>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E90468E688>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E904690688>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483B148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483B248>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483B2C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483B988>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483BA88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483BB08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483BB88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90483BBC8>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000001E90469F288>, <zktools.orm.ServiceReg.ServiceReg object at 0x000001E90469FAC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x000001E90469FA88>, <zktools.orm.ServiceReg.ServiceReg object at 0x000001E90469FA48>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E90484D448>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E9043E96C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E9043E95C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E9043E9688>], 'sIdenInv': None}
+INFO|2020-07-17 08:34:13,615|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-17 08:34:13,625|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-17 08:34:13,625|esbservice.py|import_zk_data:81|Thread-1||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-17 08:34:13,628|connection.py|_connect:625|Thread-7|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 08:34:13,664|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:13,664|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 08:34:14,383|esbservice.py|import_zk_data:84|Thread-1||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增15条,更新5条======|||||
+INFO|2020-07-17 08:34:14,395|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 08:34:14,395|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:14,395|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:14,396|esbservice.py|import_db_data:89|Thread-1||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-17 08:34:14,396|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 08:34:14,397|db2_data_service.py|conn_db:32|Thread-1|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-17 08:34:15,021|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-17 08:34:15,021|esbservice.py|import_db_data:94|Thread-1||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-17 08:34:15,021|esbservice.py|move_data:120|Thread-1|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-17 08:34:15,088|connection.py|_connect:625|Thread-10|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 08:34:15,106|client.py|_session_callback:533|Thread-10|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:15,106|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 08:34:15,132|connection.py|_connect_attempt:591|Thread-10|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 08:34:15,133|client.py|_session_callback:537|Thread-10|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:15,133|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:15,137|esbservice.py|service_auth:152|Thread-1|9.1.5.22:2181,IMPP 写入授权数据
+INFO|2020-07-17 08:34:15,141|connection.py|_connect:625|Thread-13|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 08:34:15,157|client.py|_session_callback:533|Thread-13|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:15,157|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 08:34:15,200|connection.py|_connect_attempt:591|Thread-13|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 08:34:15,201|client.py|_session_callback:537|Thread-13|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:15,201|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:15,202|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 08:34:15,203|db2_data_service.py|conn_db:32|Thread-1|创建数据库连接成功
+INFO|2020-07-17 08:34:15,243|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接
+ERROR|2020-07-17 08:34:15,565|operjava.py|terminate_op_auth:30|Thread-1|tmn_id:IMPP001 zk_url:9.1.5.22:2181 port:1099 ip:9.1.8.20 num_str:0 system_name:IMPP , Class com.guo.auth.JavaTools is not found
+
+INFO|2020-07-17 08:34:15,565|esbservice.py|service_auth:161|Thread-1|更新zookeeper 授权数据成功，更新的系统：IMPP
+INFO|2020-07-17 08:34:15,630|connection.py|_connect:625|Thread-16|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 08:34:15,642|client.py|_session_callback:533|Thread-16|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:15,642|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 08:34:15,658|connection.py|_connect_attempt:591|Thread-16|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 08:34:15,658|client.py|_session_callback:537|Thread-16|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:15,659|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:15,660|esbservice.py|service_auth:152|Thread-1|9.1.5.22:2181,IMPP 写入授权数据
+INFO|2020-07-17 08:34:15,662|connection.py|_connect:625|Thread-19|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 08:34:15,673|client.py|_session_callback:533|Thread-19|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 08:34:15,674|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 08:34:15,727|connection.py|_connect_attempt:591|Thread-19|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 08:34:15,727|client.py|_session_callback:537|Thread-19|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 08:34:15,727|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 08:34:15,727|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 08:34:15,728|db2_data_service.py|conn_db:32|Thread-1|创建数据库连接成功
+INFO|2020-07-17 08:34:15,798|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接
+ERROR|2020-07-17 08:34:15,877|log.py|log_response:228|Thread-1|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 21, in terminate_op_auth
+    jpype.startJVM(jvm_path, "-ea", "-Djava.class.path=%s" % (jar_path + '/test-1.0-SNAPSHOT.jar'))
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 156, in startJVM
+    raise OSError('JVM cannot be restarted')
+OSError: JVM cannot be restarted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 160, in service_auth
+    service_terminate_auth(env.db_url, system_name, new_zk_data.service_num, env.zk_url)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 190, in service_terminate_auth
+    num=num, zk_url=zk_url)
+  File "D:\works\python\pythonweb\zktools\javatools\operjava.py", line 28, in terminate_op_auth
+    jpype.shutdownJVM()
+  File "D:\app\Python\Python37\lib\site-packages\jpype\_core.py", line 310, in shutdownJVM
+    _jpype.shutdown()
+RuntimeError: Attempt to shutdown without a live JVM
+
+INFO|2020-07-17 09:12:11,877|esbservice.py|init:130|Thread-20|===========配置加载成功===========
+INFO|2020-07-17 09:12:11,881|connection.py|_connect:625|Thread-23|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 09:12:11,896|client.py|_session_callback:533|Thread-23|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:11,896|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 09:12:12,290|connection.py|_connect_attempt:591|Thread-23|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 09:12:12,290|client.py|_session_callback:537|Thread-23|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:12,291|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:12,291|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 09:12:12,295|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 09:12:12,361|db2_data_service.py|get_service_all_data:125|Thread-20|全部服务码:['300302001204', '300302001209', '300302001210']
+INFO|2020-07-17 09:12:12,444|db2_data_service.py|get_service_all_data:135|Thread-20|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E9044ED708>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E9044EDC88>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x000001E90482EE88>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D308>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D188>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D408>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D3C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E90484D288>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001E904171488>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000001E904478C08>, <zktools.orm.ServiceReg.ServiceReg object at 0x000001E904478148>, <zktools.orm.ServiceReg.ServiceReg object at 0x000001E90463BF88>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E904E54B88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E904E545C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E904E54C88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x000001E904E54588>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x000001E904572E08>]}
+INFO|2020-07-17 09:12:12,445|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 09:12:12,449|esbservice.py|move_data:110|Thread-20|开始从主节点进行数据导出...
+INFO|2020-07-17 09:12:12,449|esbservice.py|import_zk_data:81|Thread-20||||||======开始向DEV-SIT测试环境(开发)导入zk配置======|||||
+INFO|2020-07-17 09:12:12,453|connection.py|_connect:625|Thread-26|Connecting to 9.1.6.42(9.1.6.42):2183, use_ssl: False
+INFO|2020-07-17 09:12:12,472|client.py|_session_callback:533|Thread-26|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:12,472|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.6.42:2183成功
+INFO|2020-07-17 09:12:12,759|esbservice.py|import_zk_data:84|Thread-20||||||======DEV-SIT测试环境(开发)导入zk配置成功,新增10条,更新5条======|||||
+INFO|2020-07-17 09:12:12,767|connection.py|_connect_attempt:591|Thread-26|Closing connection to 9.1.6.42:2183
+INFO|2020-07-17 09:12:12,767|client.py|_session_callback:537|Thread-26|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:12,768|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:12,769|esbservice.py|import_db_data:89|Thread-20||||||======开始向DEV-SIT测试环境(开发)导入DB数据======|||||
+INFO|2020-07-17 09:12:12,769|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenkf
+INFO|2020-07-17 09:12:12,770|db2_data_service.py|conn_db:32|Thread-20|创建DEV-SIT测试环境(开发)数据库连接成功
+INFO|2020-07-17 09:12:13,365|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接DEV-SIT测试环境(开发)
+INFO|2020-07-17 09:12:13,365|esbservice.py|import_db_data:94|Thread-20||||||======向DEV-SIT测试环境(开发)导入DB数据完成======|||||
+INFO|2020-07-17 09:12:13,365|esbservice.py|move_data:120|Thread-20|======环境：DEV-SIT测试环境(开发)数据同步成功
+INFO|2020-07-17 09:12:13,365|esbservice.py|import_zk_data:81|Thread-20||||||======开始向IBP-SIT测试环境(互金)导入zk配置======|||||
+INFO|2020-07-17 09:12:13,368|connection.py|_connect:625|Thread-29|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-17 09:12:13,376|client.py|_session_callback:533|Thread-29|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:13,377|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-17 09:12:13,529|esbservice.py|import_zk_data:84|Thread-20||||||======IBP-SIT测试环境(互金)导入zk配置成功,新增5条,更新10条======|||||
+INFO|2020-07-17 09:12:13,534|connection.py|_connect_attempt:591|Thread-29|Closing connection to 9.1.5.176:2181
+INFO|2020-07-17 09:12:13,534|client.py|_session_callback:537|Thread-29|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:13,535|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:13,535|esbservice.py|import_db_data:89|Thread-20||||||======开始向IBP-SIT测试环境(互金)导入DB数据======|||||
+INFO|2020-07-17 09:12:13,535|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-17 09:12:13,536|db2_data_service.py|conn_db:32|Thread-20|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-17 09:12:13,933|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-17 09:12:13,933|esbservice.py|import_db_data:94|Thread-20||||||======向IBP-SIT测试环境(互金)导入DB数据完成======|||||
+INFO|2020-07-17 09:12:13,933|esbservice.py|move_data:120|Thread-20|======环境：IBP-SIT测试环境(互金)数据同步成功
+INFO|2020-07-17 09:12:13,933|esbservice.py|import_zk_data:81|Thread-20||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-17 09:12:13,937|connection.py|_connect:625|Thread-32|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 09:12:13,964|client.py|_session_callback:533|Thread-32|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:13,965|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 09:12:14,266|esbservice.py|import_zk_data:84|Thread-20||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增10条,更新5条======|||||
+INFO|2020-07-17 09:12:14,276|connection.py|_connect_attempt:591|Thread-32|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 09:12:14,277|client.py|_session_callback:537|Thread-32|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:14,277|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:14,277|esbservice.py|import_db_data:89|Thread-20||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-17 09:12:14,278|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 09:12:14,279|db2_data_service.py|conn_db:32|Thread-20|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-17 09:12:14,689|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-17 09:12:14,689|esbservice.py|import_db_data:94|Thread-20||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-17 09:12:14,689|esbservice.py|move_data:120|Thread-20|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-17 09:12:14,689|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT2测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:14,691|connection.py|_connect:625|Thread-35|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-17 09:12:14,702|client.py|_session_callback:533|Thread-35|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:14,703|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-17 09:12:14,867|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT2测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:14,873|connection.py|_connect_attempt:591|Thread-35|Closing connection to 9.1.5.171:2181
+INFO|2020-07-17 09:12:14,874|client.py|_session_callback:537|Thread-35|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:14,874|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:14,874|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT2测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:14,875|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-17 09:12:14,876|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-17 09:12:15,443|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-17 09:12:15,443|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT2测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:15,443|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT2测试环境数据同步成功
+INFO|2020-07-17 09:12:15,443|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT3测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:15,446|connection.py|_connect:625|Thread-38|Connecting to 9.1.5.24(9.1.5.24):2181, use_ssl: False
+INFO|2020-07-17 09:12:15,456|client.py|_session_callback:533|Thread-38|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:15,457|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.24:2181成功
+INFO|2020-07-17 09:12:15,573|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT3测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:15,577|connection.py|_connect_attempt:591|Thread-38|Closing connection to 9.1.5.24:2181
+INFO|2020-07-17 09:12:15,577|client.py|_session_callback:537|Thread-38|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:15,578|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:15,578|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT3测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:15,578|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat3
+INFO|2020-07-17 09:12:15,579|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT3测试环境数据库连接成功
+INFO|2020-07-17 09:12:16,107|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT3测试环境
+INFO|2020-07-17 09:12:16,107|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT3测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:16,107|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT3测试环境数据同步成功
+INFO|2020-07-17 09:12:16,107|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT4测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:16,109|connection.py|_connect:625|Thread-41|Connecting to 9.1.8.216(9.1.8.216):2181, use_ssl: False
+INFO|2020-07-17 09:12:16,122|client.py|_session_callback:533|Thread-41|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:16,122|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.8.216:2181成功
+INFO|2020-07-17 09:12:16,342|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT4测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:16,346|connection.py|_connect_attempt:591|Thread-41|Closing connection to 9.1.8.216:2181
+INFO|2020-07-17 09:12:16,346|client.py|_session_callback:537|Thread-41|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:16,347|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:16,348|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT4测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:16,348|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccendb
+INFO|2020-07-17 09:12:16,349|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT4测试环境数据库连接成功
+INFO|2020-07-17 09:12:16,736|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT4测试环境
+INFO|2020-07-17 09:12:16,736|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT4测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:16,736|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT4测试环境数据同步成功
+INFO|2020-07-17 09:12:16,736|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT5测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:16,738|connection.py|_connect:625|Thread-44|Connecting to 9.1.5.40(9.1.5.40):2181, use_ssl: False
+INFO|2020-07-17 09:12:16,756|client.py|_session_callback:533|Thread-44|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:16,756|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.5.40:2181成功
+INFO|2020-07-17 09:12:16,860|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT5测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:16,863|connection.py|_connect_attempt:591|Thread-44|Closing connection to 9.1.5.40:2181
+INFO|2020-07-17 09:12:16,863|client.py|_session_callback:537|Thread-44|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:16,864|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:16,864|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT5测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:16,864|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.41:60000/esccen
+INFO|2020-07-17 09:12:16,865|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT5测试环境数据库连接成功
+INFO|2020-07-17 09:12:17,388|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT5测试环境
+INFO|2020-07-17 09:12:17,388|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT5测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:17,388|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT5测试环境数据同步成功
+INFO|2020-07-17 09:12:17,388|esbservice.py|import_zk_data:81|Thread-20||||||======开始向ESB-UAT7测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:17,391|connection.py|_connect:625|Thread-47|Connecting to 9.1.8.25(9.1.8.25):2181, use_ssl: False
+INFO|2020-07-17 09:12:17,413|client.py|_session_callback:533|Thread-47|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:17,413|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.8.25:2181成功
+INFO|2020-07-17 09:12:17,551|esbservice.py|import_zk_data:84|Thread-20||||||======ESB-UAT7测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:17,557|connection.py|_connect_attempt:591|Thread-47|Closing connection to 9.1.8.25:2181
+INFO|2020-07-17 09:12:17,558|client.py|_session_callback:537|Thread-47|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:17,558|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:17,558|esbservice.py|import_db_data:89|Thread-20||||||======开始向ESB-UAT7测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:17,558|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.203:60000/esccenu7
+INFO|2020-07-17 09:12:17,559|db2_data_service.py|conn_db:32|Thread-20|创建ESB-UAT7测试环境数据库连接成功
+INFO|2020-07-17 09:12:18,148|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接ESB-UAT7测试环境
+INFO|2020-07-17 09:12:18,148|esbservice.py|import_db_data:94|Thread-20||||||======向ESB-UAT7测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:18,148|esbservice.py|move_data:120|Thread-20|======环境：ESB-UAT7测试环境数据同步成功
+INFO|2020-07-17 09:12:18,149|esbservice.py|import_zk_data:81|Thread-20||||||======开始向电票测试环境导入zk配置======|||||
+INFO|2020-07-17 09:12:18,151|connection.py|_connect:625|Thread-50|Connecting to 9.1.8.167(9.1.8.167):2181, use_ssl: False
+INFO|2020-07-17 09:12:18,160|client.py|_session_callback:533|Thread-50|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:18,160|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.8.167:2181成功
+INFO|2020-07-17 09:12:18,294|esbservice.py|import_zk_data:84|Thread-20||||||======电票测试环境导入zk配置成功,新增9条,更新6条======|||||
+INFO|2020-07-17 09:12:18,298|connection.py|_connect_attempt:591|Thread-50|Closing connection to 9.1.8.167:2181
+INFO|2020-07-17 09:12:18,298|client.py|_session_callback:537|Thread-50|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:18,299|zkClient.py|close:33|Thread-20|断开zk连接...
+INFO|2020-07-17 09:12:18,299|esbservice.py|import_db_data:89|Thread-20||||||======开始向电票测试环境导入DB数据======|||||
+INFO|2020-07-17 09:12:18,299|db2_data_service.py|conn_db:27|Thread-20|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.10.79:60000/esccenu5
+INFO|2020-07-17 09:12:18,300|db2_data_service.py|conn_db:32|Thread-20|创建电票测试环境数据库连接成功
+INFO|2020-07-17 09:12:18,839|db2_data_service.py|dis_connect:194|Thread-20|关闭环境数据库连接电票测试环境
+INFO|2020-07-17 09:12:18,839|esbservice.py|import_db_data:94|Thread-20||||||======向电票测试环境导入DB数据完成======|||||
+INFO|2020-07-17 09:12:18,839|esbservice.py|move_data:120|Thread-20|======环境：电票测试环境数据同步成功
+INFO|2020-07-17 09:12:18,880|connection.py|_connect:625|Thread-53|Connecting to 9.1.6.42(9.1.6.42):2183, use_ssl: False
+INFO|2020-07-17 09:12:18,896|client.py|_session_callback:533|Thread-53|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 09:12:18,897|zkClient.py|__init__:23|Thread-20|连接zk服务器9.1.6.42:2183成功
+INFO|2020-07-17 09:12:18,914|connection.py|_connect_attempt:591|Thread-53|Closing connection to 9.1.6.42:2183
+INFO|2020-07-17 09:12:18,914|client.py|_session_callback:537|Thread-53|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 09:12:18,915|zkClient.py|close:33|Thread-20|断开zk连接...
+ERROR|2020-07-17 09:12:18,915|serviceauthservice.py|modify_service_auth_file:102|Thread-20|解析xml报错
+Traceback (most recent call last):
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 84, in modify_service_auth_file
+    dom_tree = parseString(file_content)
+  File "D:\app\Python\Python37\lib\xml\dom\minidom.py", line 1968, in parseString
+    return expatbuilder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 925, in parseString
+    return builder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 65
+ERROR|2020-07-17 09:12:18,975|log.py|log_response:228|Thread-20|Internal Server Error: /syn_env/
+Traceback (most recent call last):
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\app\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\app\Python\Python37\lib\site-packages\django\views\decorators\clickjacking.py", line 33, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "D:\works\python\pythonweb\zktools\toolsmain.py", line 93, in syn_commit
+    esbservice.service_auth(env_list=my_flow_env_list, service_ids=service_codes_list)
+  File "D:\works\python\pythonweb\zktools\service\esbservice.py", line 151, in service_auth
+    new_zk_data = modify_service_auth_file(zk_data, db_auth_info, system_name)
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 103, in modify_service_auth_file
+    raise e
+  File "D:\works\python\pythonweb\zktools\authservice\serviceauthservice.py", line 84, in modify_service_auth_file
+    dom_tree = parseString(file_content)
+  File "D:\app\Python\Python37\lib\xml\dom\minidom.py", line 1968, in parseString
+    return expatbuilder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 925, in parseString
+    return builder.parseString(string)
+  File "D:\app\Python\Python37\lib\xml\dom\expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 65
+INFO|2020-07-17 10:42:06,157|esbservice.py|init:130|Thread-2|===========配置加载成功===========
+INFO|2020-07-17 10:42:06,158|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 10:46:05,182|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 10:46:05,185|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 10:46:05,188|connection.py|_connect:625|Thread-4|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 10:46:05,220|client.py|_session_callback:533|Thread-4|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 10:46:05,220|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 10:46:06,176|connection.py|_connect_attempt:591|Thread-4|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 10:46:06,177|client.py|_session_callback:537|Thread-4|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 10:46:06,177|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 10:46:06,177|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 10:46:06,838|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 10:46:07,609|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['300603004301', '300603003803', '300305000203', '300102000515', '100101000202', '100104000101', '300602001802', '600102000311', '202005131400', '202005131500', '500102000731', '600103000508', '300702002204']
+INFO|2020-07-17 10:46:07,700|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17348>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E174C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17548>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E175C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17648>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17708>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17788>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17808>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17888>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E176C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17988>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17A48>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E17B08>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E38F48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A108>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A188>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A208>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A288>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A348>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A3C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A448>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A4C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A308>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A5C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A688>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A748>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A808>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A8C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3A988>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AA48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AB48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AC48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AD48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AE48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3AF48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E088>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E188>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E288>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E388>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E488>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E588>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E3E688>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A8C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AA88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AB08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AB88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AC08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5ACC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AD48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5ADC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AE48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AC88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AF48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5C048>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5C108>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E348>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E4C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E588>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E608>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E688>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E748>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E7C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E848>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E8C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E708>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6E9C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6EA88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6EB48>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6EC08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6ECC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6ED88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59E6EE48>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B508>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B688>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B708>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B788>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B808>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B8C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B948>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B9C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BA48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9B888>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BB48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BC08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BCC8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BD88>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E9BE48>]}
+INFO|2020-07-17 10:46:07,701|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 10:46:07,704|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-17 10:46:07,705|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT2测试环境导入zk配置======|||||
+INFO|2020-07-17 10:46:07,707|connection.py|_connect:625|Thread-7|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-17 10:46:07,717|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 10:46:07,718|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-17 10:46:08,507|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT2测试环境导入zk配置成功,新增35条,更新30条======|||||
+INFO|2020-07-17 10:46:08,514|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.5.171:2181
+INFO|2020-07-17 10:46:08,514|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 10:46:08,515|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 10:46:08,515|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT2测试环境导入DB数据======|||||
+INFO|2020-07-17 10:46:08,515|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-17 10:46:08,516|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-17 10:46:12,681|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-17 10:46:12,681|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT2测试环境导入DB数据完成======|||||
+INFO|2020-07-17 10:46:12,681|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT2测试环境数据同步成功
+INFO|2020-07-17 10:46:29,335|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 10:46:29,337|connection.py|_connect:625|Thread-10|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-17 10:46:29,386|client.py|_session_callback:533|Thread-10|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 10:46:29,387|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-17 10:46:29,872|connection.py|_connect_attempt:591|Thread-10|Closing connection to 9.1.5.171:2181
+INFO|2020-07-17 10:46:29,872|client.py|_session_callback:537|Thread-10|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 10:46:29,873|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 10:46:29,873|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-17 10:46:29,874|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-17 10:46:29,927|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['300601000802V1']
+INFO|2020-07-17 10:46:29,960|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E7EE88>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E1E0C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B595AEAC8>], 'sReg': None, 'sAuth': None, 'sIdenInv': None}
+INFO|2020-07-17 10:46:29,960|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-17 10:46:29,963|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-17 10:46:29,963|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT1测试环境导入zk配置======|||||
+INFO|2020-07-17 10:46:29,966|connection.py|_connect:625|Thread-13|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 10:46:30,035|client.py|_session_callback:533|Thread-13|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 10:46:30,035|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 10:46:30,356|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT1测试环境导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-17 10:46:30,385|connection.py|_connect_attempt:591|Thread-13|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 10:46:30,386|client.py|_session_callback:537|Thread-13|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 10:46:30,387|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 10:46:30,388|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT1测试环境导入DB数据======|||||
+INFO|2020-07-17 10:46:30,388|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 10:46:30,395|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 10:46:31,233|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 10:46:31,234|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT1测试环境导入DB数据完成======|||||
+INFO|2020-07-17 10:46:31,234|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT1测试环境数据同步成功
+INFO|2020-07-17 11:05:52,460|esbservice.py|init:130|Thread-14|===========配置加载成功===========
+INFO|2020-07-17 11:05:52,463|connection.py|_connect:625|Thread-17|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-17 11:05:52,513|client.py|_session_callback:533|Thread-17|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:05:52,514|zkClient.py|__init__:23|Thread-14|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-17 11:05:53,421|connection.py|_connect_attempt:591|Thread-17|Closing connection to 9.1.5.176:2181
+INFO|2020-07-17 11:05:53,422|client.py|_session_callback:537|Thread-17|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:05:53,422|zkClient.py|close:33|Thread-14|断开zk连接...
+INFO|2020-07-17 11:05:53,423|db2_data_service.py|conn_db:27|Thread-14|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-17 11:05:53,424|db2_data_service.py|conn_db:32|Thread-14|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-17 11:05:53,471|db2_data_service.py|get_service_all_data:125|Thread-14|全部服务码:['300202001212']
+INFO|2020-07-17 11:05:53,506|db2_data_service.py|get_service_all_data:135|Thread-14|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6408>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59A2C6C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59A2CE48>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000025B5959E1C8>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59961608>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59961BC8>]}
+INFO|2020-07-17 11:05:53,506|db2_data_service.py|dis_connect:194|Thread-14|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-17 11:05:53,509|esbservice.py|move_data:110|Thread-14|开始从主节点进行数据导出...
+INFO|2020-07-17 11:05:53,509|esbservice.py|import_zk_data:81|Thread-14||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-17 11:05:53,512|connection.py|_connect:625|Thread-20|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 11:05:53,528|client.py|_session_callback:533|Thread-20|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:05:53,528|zkClient.py|__init__:23|Thread-14|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 11:05:53,749|esbservice.py|import_zk_data:84|Thread-14||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增5条,更新0条======|||||
+INFO|2020-07-17 11:05:53,756|connection.py|_connect_attempt:591|Thread-20|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 11:05:53,756|client.py|_session_callback:537|Thread-20|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:05:53,757|zkClient.py|close:33|Thread-14|断开zk连接...
+INFO|2020-07-17 11:05:53,757|esbservice.py|import_db_data:89|Thread-14||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-17 11:05:53,757|db2_data_service.py|conn_db:27|Thread-14|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 11:05:53,758|db2_data_service.py|conn_db:32|Thread-14|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-17 11:05:53,964|db2_data_service.py|dis_connect:194|Thread-14|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-17 11:05:53,964|esbservice.py|import_db_data:94|Thread-14||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-17 11:05:53,964|esbservice.py|move_data:120|Thread-14|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-17 11:23:57,109|esbservice.py|init:130|Thread-21|===========配置加载成功===========
+INFO|2020-07-17 11:23:57,112|connection.py|_connect:625|Thread-24|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 11:23:57,136|client.py|_session_callback:533|Thread-24|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:23:57,137|zkClient.py|__init__:23|Thread-21|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 11:24:00,947|connection.py|_connect_attempt:591|Thread-24|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 11:24:00,947|client.py|_session_callback:537|Thread-24|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:24:00,949|zkClient.py|close:33|Thread-21|断开zk连接...
+INFO|2020-07-17 11:24:00,949|db2_data_service.py|conn_db:27|Thread-21|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 11:24:00,950|db2_data_service.py|conn_db:32|Thread-21|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 11:24:01,018|db2_data_service.py|get_service_all_data:125|Thread-21|全部服务码:['300101000409', '300305000203', '300402000802', '300302001506', '300101000434', '300103000117', '300102000310', '300101000418', '300101000417', '300102000311', '300101000312', '300101000435', '300102000316', '300103000123', '300102000801', '300702001214', '100102000102', '100103000101', '100103000103', '100103000104', '600102000201', '600103000401', '300603004104', '500102000823', '500102001004', '100102000103', '300703000113', '300103000126', '300703001901', '300703001802', '300103000124', '300703000534', '100101000202', '100104000101', '202005131400', '202005131500', '500102000731', '300702002204', '300103000102V1', '300601000802V1']
+INFO|2020-07-17 11:24:01,186|db2_data_service.py|get_service_all_data:135|Thread-21|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7FC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7D08>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7D88>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7288>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7E88>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7DC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7D48>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7888>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFB08>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EC7688>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF6C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF488>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFB48>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF708>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF9C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFE48>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFCC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFE08>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF948>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF908>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF848>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBF648>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59EBFB88>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B594D4688>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59FE8E08>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59FE8508>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6408>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6BC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE62C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6908>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6588>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6548>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE63C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6488>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE68C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6C08>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE61C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6448>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59DE6848>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B5999F248>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599793C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59979988>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59979FC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599798C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59979C08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599795C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59979908>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74D48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74BC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599794C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E746C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74188>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74488>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74288>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74AC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74888>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74EC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74E48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74388>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E743C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74748>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74A88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74588>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74648>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E741C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74948>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E74F08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974D08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974408>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599746C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974CC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974248>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974688>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599741C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974C88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974BC8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59974F08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A15C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1708>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1C08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1A08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1808>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A14C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599A1448>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48F08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48808>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48988>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48348>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48C88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48C08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48D08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E489C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48208>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48688>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48308>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E48148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5992BB08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5992B948>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5992B188>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D048>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D148>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D488>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D688>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D108>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D208>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B5993D448>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B595AAA88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B595AA5C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59EAC1C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59EAC348>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59967208>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59967E48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59967908>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79108>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79848>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79F88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79F08>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79988>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79B48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E794C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79B88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79A48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79648>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79908>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E79E88>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AF48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AD88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AA48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AD08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AE08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A5C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A8C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A2C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A9C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AB48>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AAC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5AF88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5ACC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A108>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E5A248>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981648>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981A88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B599814C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981848>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981448>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981748>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981308>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981108>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981488>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981048>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981948>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59981F08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59717F88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B597179C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937D08>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937988>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937948>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937A88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937DC8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59937F88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B596CD888>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B596CD548>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B596CD988>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B596CDC88>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997BD88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997B648>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997B348>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997BEC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997B2C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980DC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980948>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980088>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980E08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5997BF48>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980288>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980F08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980C88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980BC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980748>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B599807C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980E88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980848>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980508>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59980B88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B599800C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EC88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EF08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EAC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E988>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E608>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E148>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E0C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EC08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EE88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E7C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EBC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999EF48>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E088>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B5999E108>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B599134C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B599133C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59913108>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA188>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA548>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA208>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA848>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA588>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA288>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA508>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59EBA7C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5EBC8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5E248>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5EE88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5E0C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5EE08>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5ED48>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59A5E588>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5990F5C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E208>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E088>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E408>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E048>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993ED08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E708>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993E848>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993ED48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5993EBC8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E872C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87E48>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87E08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87048>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E876C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E873C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87888>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87BC8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87B88>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87288>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87488>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87A88>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E870C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87D08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87808>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E87FC8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B599266C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B5959E1C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56348>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56308>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56248>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56388>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56C08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56108>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E565C8>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x0000025B59E56808>]}
+INFO|2020-07-17 11:24:01,187|db2_data_service.py|dis_connect:194|Thread-21|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 11:24:01,190|esbservice.py|move_data:110|Thread-21|开始从主节点进行数据导出...
+INFO|2020-07-17 11:24:01,190|esbservice.py|import_zk_data:81|Thread-21||||||======开始向ESB-UAT3测试环境导入zk配置======|||||
+INFO|2020-07-17 11:24:01,192|connection.py|_connect:625|Thread-27|Connecting to 9.1.5.24(9.1.5.24):2181, use_ssl: False
+INFO|2020-07-17 11:24:01,204|client.py|_session_callback:533|Thread-27|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:24:01,204|zkClient.py|__init__:23|Thread-21|连接zk服务器9.1.5.24:2181成功
+INFO|2020-07-17 11:24:03,174|esbservice.py|import_zk_data:84|Thread-21||||||======ESB-UAT3测试环境导入zk配置成功,新增173条,更新15条======|||||
+INFO|2020-07-17 11:24:03,179|connection.py|_connect_attempt:591|Thread-27|Closing connection to 9.1.5.24:2181
+INFO|2020-07-17 11:24:03,179|client.py|_session_callback:537|Thread-27|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:24:03,180|zkClient.py|close:33|Thread-21|断开zk连接...
+INFO|2020-07-17 11:24:03,180|esbservice.py|import_db_data:89|Thread-21||||||======开始向ESB-UAT3测试环境导入DB数据======|||||
+INFO|2020-07-17 11:24:03,181|db2_data_service.py|conn_db:27|Thread-21|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat3
+INFO|2020-07-17 11:24:03,182|db2_data_service.py|conn_db:32|Thread-21|创建ESB-UAT3测试环境数据库连接成功
+INFO|2020-07-17 11:24:10,997|db2_data_service.py|dis_connect:194|Thread-21|关闭环境数据库连接ESB-UAT3测试环境
+INFO|2020-07-17 11:24:10,998|esbservice.py|import_db_data:94|Thread-21||||||======向ESB-UAT3测试环境导入DB数据完成======|||||
+INFO|2020-07-17 11:24:10,998|esbservice.py|move_data:120|Thread-21|======环境：ESB-UAT3测试环境数据同步成功
+INFO|2020-07-17 11:24:25,641|esbservice.py|init:130|Thread-21|===========配置加载成功===========
+INFO|2020-07-17 11:24:25,643|connection.py|_connect:625|Thread-30|Connecting to 9.1.5.24(9.1.5.24):2181, use_ssl: False
+INFO|2020-07-17 11:24:25,653|client.py|_session_callback:533|Thread-30|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:24:25,653|zkClient.py|__init__:23|Thread-21|连接zk服务器9.1.5.24:2181成功
+INFO|2020-07-17 11:24:26,005|connection.py|_connect_attempt:591|Thread-30|Closing connection to 9.1.5.24:2181
+INFO|2020-07-17 11:24:26,006|client.py|_session_callback:537|Thread-30|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:24:26,006|zkClient.py|close:33|Thread-21|断开zk连接...
+INFO|2020-07-17 11:24:26,006|db2_data_service.py|conn_db:27|Thread-21|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat3
+INFO|2020-07-17 11:24:26,007|db2_data_service.py|conn_db:32|Thread-21|创建ESB-UAT3测试环境数据库连接成功
+INFO|2020-07-17 11:24:26,053|db2_data_service.py|get_service_all_data:125|Thread-21|全部服务码:['500102000401V2', '300101000401V2', '500102000403V2', '500102000802V2']
+INFO|2020-07-17 11:24:26,114|db2_data_service.py|get_service_all_data:135|Thread-21|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B599135C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E0BEC8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E0B5C8>, <zktools.orm.ServiceDefine.ServiceDefine object at 0x0000025B59E0B648>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59724848>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59941C48>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B599AFA88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B596B1A88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E0C4C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E0C908>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E0C488>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000025B59E0C2C8>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E481C8>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E48B88>, <zktools.orm.ServiceReg.ServiceReg object at 0x0000025B59E48708>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59DDF548>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59DDFB88>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59DDF3C8>, <zktools.orm.ServiceAuth.ServiceAuth object at 0x0000025B59DF1C88>], 'sIdenInv': None}
+INFO|2020-07-17 11:24:26,115|db2_data_service.py|dis_connect:194|Thread-21|关闭环境数据库连接ESB-UAT3测试环境
+INFO|2020-07-17 11:24:26,117|esbservice.py|move_data:110|Thread-21|开始从主节点进行数据导出...
+INFO|2020-07-17 11:24:26,117|esbservice.py|import_zk_data:81|Thread-21||||||======开始向ESB-UAT1测试环境导入zk配置======|||||
+INFO|2020-07-17 11:24:26,120|connection.py|_connect:625|Thread-33|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 11:24:26,139|client.py|_session_callback:533|Thread-33|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:24:26,139|zkClient.py|__init__:23|Thread-21|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 11:24:26,713|esbservice.py|import_zk_data:84|Thread-21||||||======ESB-UAT1测试环境导入zk配置成功,新增18条,更新2条======|||||
+INFO|2020-07-17 11:24:26,724|connection.py|_connect_attempt:591|Thread-33|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 11:24:26,724|client.py|_session_callback:537|Thread-33|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:24:26,725|zkClient.py|close:33|Thread-21|断开zk连接...
+INFO|2020-07-17 11:24:26,725|esbservice.py|import_db_data:89|Thread-21||||||======开始向ESB-UAT1测试环境导入DB数据======|||||
+INFO|2020-07-17 11:24:26,725|db2_data_service.py|conn_db:27|Thread-21|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 11:24:26,726|db2_data_service.py|conn_db:32|Thread-21|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 11:24:27,291|db2_data_service.py|dis_connect:194|Thread-21|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 11:24:27,291|esbservice.py|import_db_data:94|Thread-21||||||======向ESB-UAT1测试环境导入DB数据完成======|||||
+INFO|2020-07-17 11:24:27,291|esbservice.py|move_data:120|Thread-21|======环境：ESB-UAT1测试环境数据同步成功
+INFO|2020-07-17 11:24:27,291|esbservice.py|import_zk_data:81|Thread-21||||||======开始向ESB-UAT2测试环境导入zk配置======|||||
+INFO|2020-07-17 11:24:27,295|connection.py|_connect:625|Thread-36|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-17 11:24:27,302|client.py|_session_callback:533|Thread-36|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 11:24:27,303|zkClient.py|__init__:23|Thread-21|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-17 11:24:27,464|esbservice.py|import_zk_data:84|Thread-21||||||======ESB-UAT2测试环境导入zk配置成功,新增18条,更新2条======|||||
+INFO|2020-07-17 11:24:27,469|connection.py|_connect_attempt:591|Thread-36|Closing connection to 9.1.5.171:2181
+INFO|2020-07-17 11:24:27,470|client.py|_session_callback:537|Thread-36|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 11:24:27,471|zkClient.py|close:33|Thread-21|断开zk连接...
+INFO|2020-07-17 11:24:27,471|esbservice.py|import_db_data:89|Thread-21||||||======开始向ESB-UAT2测试环境导入DB数据======|||||
+INFO|2020-07-17 11:24:27,471|db2_data_service.py|conn_db:27|Thread-21|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-17 11:24:27,473|db2_data_service.py|conn_db:32|Thread-21|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-17 11:24:28,121|db2_data_service.py|dis_connect:194|Thread-21|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-17 11:24:28,122|esbservice.py|import_db_data:94|Thread-21||||||======向ESB-UAT2测试环境导入DB数据完成======|||||
+INFO|2020-07-17 11:24:28,122|esbservice.py|move_data:120|Thread-21|======环境：ESB-UAT2测试环境数据同步成功
+INFO|2020-07-17 16:58:23,741|esbservice.py|init:130|Thread-2|===========配置加载成功===========
+INFO|2020-07-17 16:58:23,742|esbservice.py|init:130|Thread-3|===========配置加载成功===========
+WARNING|2020-07-17 16:58:23,880|log.py|log_response:228|Thread-1|Not Found: /favicon.ico
+INFO|2020-07-17 16:58:32,658|esbservice.py|init:130|Thread-4|===========配置加载成功===========
+INFO|2020-07-17 16:58:32,661|connection.py|_connect:625|Thread-7|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-17 16:58:32,671|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 16:58:32,671|zkClient.py|__init__:23|Thread-4|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-17 16:58:32,821|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.5.176:2181
+INFO|2020-07-17 16:58:32,821|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 16:58:32,822|zkClient.py|close:33|Thread-4|断开zk连接...
+INFO|2020-07-17 16:58:32,822|db2_data_service.py|conn_db:27|Thread-4|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-17 16:58:35,030|db2_data_service.py|conn_db:32|Thread-4|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-17 16:58:38,068|db2_data_service.py|get_service_all_data:125|Thread-4|全部服务码:['300101000209']
+INFO|2020-07-17 16:58:38,185|db2_data_service.py|get_service_all_data:135|Thread-4|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x00000207517AC9C8>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x0000020751827708>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x0000020751827848>], 'sReg': None, 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000207517F50C8>], 'sIdenInv': None}
+INFO|2020-07-17 16:58:38,186|db2_data_service.py|dis_connect:194|Thread-4|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-17 16:58:38,199|esbservice.py|move_data:110|Thread-4|开始从主节点进行数据导出...
+INFO|2020-07-17 16:58:38,199|esbservice.py|import_zk_data:81|Thread-4||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-17 16:58:38,201|connection.py|_connect:625|Thread-10|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 16:58:38,232|client.py|_session_callback:533|Thread-10|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 16:58:38,233|zkClient.py|__init__:23|Thread-4|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 16:58:38,505|esbservice.py|import_zk_data:84|Thread-4||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增5条,更新0条======|||||
+INFO|2020-07-17 16:58:38,521|connection.py|_connect_attempt:591|Thread-10|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 16:58:38,521|client.py|_session_callback:537|Thread-10|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 16:58:38,522|zkClient.py|close:33|Thread-4|断开zk连接...
+INFO|2020-07-17 16:58:38,522|esbservice.py|import_db_data:89|Thread-4||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-17 16:58:38,523|db2_data_service.py|conn_db:27|Thread-4|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 16:58:38,524|db2_data_service.py|conn_db:32|Thread-4|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-17 16:58:38,897|db2_data_service.py|dis_connect:194|Thread-4|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-17 16:58:38,898|esbservice.py|import_db_data:94|Thread-4||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-17 16:58:38,898|esbservice.py|move_data:120|Thread-4|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-17 17:10:46,345|esbservice.py|init:130|Thread-11|===========配置加载成功===========
+INFO|2020-07-17 17:10:46,348|connection.py|_connect:625|Thread-14|Connecting to 9.1.5.176(9.1.5.176):2181, use_ssl: False
+INFO|2020-07-17 17:10:46,358|client.py|_session_callback:533|Thread-14|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 17:10:46,358|zkClient.py|__init__:23|Thread-11|连接zk服务器9.1.5.176:2181成功
+INFO|2020-07-17 17:10:46,544|connection.py|_connect_attempt:591|Thread-14|Closing connection to 9.1.5.176:2181
+INFO|2020-07-17 17:10:46,544|client.py|_session_callback:537|Thread-14|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 17:10:46,545|zkClient.py|close:33|Thread-11|断开zk连接...
+INFO|2020-07-17 17:10:46,545|db2_data_service.py|conn_db:27|Thread-11|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/censt
+INFO|2020-07-17 17:10:46,546|db2_data_service.py|conn_db:32|Thread-11|创建IBP-SIT测试环境(互金)数据库连接成功
+INFO|2020-07-17 17:10:46,619|db2_data_service.py|get_service_all_data:125|Thread-11|全部服务码:['500102001704']
+INFO|2020-07-17 17:10:46,664|db2_data_service.py|get_service_all_data:135|Thread-11|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x0000020751C01108>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000002075191F8C8>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000002075191FCC8>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000002075191F048>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x00000207517C70C8>], 'sIdenInv': None}
+INFO|2020-07-17 17:10:46,665|db2_data_service.py|dis_connect:194|Thread-11|关闭环境数据库连接IBP-SIT测试环境(互金)
+INFO|2020-07-17 17:10:46,669|esbservice.py|move_data:110|Thread-11|开始从主节点进行数据导出...
+INFO|2020-07-17 17:10:46,669|esbservice.py|import_zk_data:81|Thread-11||||||======开始向CRMS-SIT测试环境(信贷)导入zk配置======|||||
+INFO|2020-07-17 17:10:46,671|connection.py|_connect:625|Thread-17|Connecting to 9.1.5.22(9.1.5.22):2181, use_ssl: False
+INFO|2020-07-17 17:10:46,697|client.py|_session_callback:533|Thread-17|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 17:10:46,697|zkClient.py|__init__:23|Thread-11|连接zk服务器9.1.5.22:2181成功
+INFO|2020-07-17 17:10:46,828|esbservice.py|import_zk_data:84|Thread-11||||||======CRMS-SIT测试环境(信贷)导入zk配置成功,新增5条,更新0条======|||||
+INFO|2020-07-17 17:10:46,839|connection.py|_connect_attempt:591|Thread-17|Closing connection to 9.1.5.22:2181
+INFO|2020-07-17 17:10:46,839|client.py|_session_callback:537|Thread-17|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 17:10:46,840|zkClient.py|close:33|Thread-11|断开zk连接...
+INFO|2020-07-17 17:10:46,840|esbservice.py|import_db_data:89|Thread-11||||||======开始向CRMS-SIT测试环境(信贷)导入DB数据======|||||
+INFO|2020-07-17 17:10:46,840|db2_data_service.py|conn_db:27|Thread-11|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenxn
+INFO|2020-07-17 17:10:46,841|db2_data_service.py|conn_db:32|Thread-11|创建CRMS-SIT测试环境(信贷)数据库连接成功
+INFO|2020-07-17 17:10:47,043|db2_data_service.py|dis_connect:194|Thread-11|关闭环境数据库连接CRMS-SIT测试环境(信贷)
+INFO|2020-07-17 17:10:47,043|esbservice.py|import_db_data:94|Thread-11||||||======向CRMS-SIT测试环境(信贷)导入DB数据完成======|||||
+INFO|2020-07-17 17:10:47,044|esbservice.py|move_data:120|Thread-11|======环境：CRMS-SIT测试环境(信贷)数据同步成功
+INFO|2020-07-17 18:12:39,363|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 18:12:39,365|esbservice.py|init:130|Thread-1|===========配置加载成功===========
+INFO|2020-07-17 18:12:39,369|connection.py|_connect:625|Thread-4|Connecting to 9.1.5.171(9.1.5.171):2181, use_ssl: False
+INFO|2020-07-17 18:12:39,379|client.py|_session_callback:533|Thread-4|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 18:12:39,380|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.171:2181成功
+INFO|2020-07-17 18:12:39,508|connection.py|_connect_attempt:591|Thread-4|Closing connection to 9.1.5.171:2181
+INFO|2020-07-17 18:12:39,509|client.py|_session_callback:537|Thread-4|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 18:12:39,509|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 18:12:39,509|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/esccenut
+INFO|2020-07-17 18:12:40,110|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT2测试环境数据库连接成功
+INFO|2020-07-17 18:12:40,810|db2_data_service.py|get_service_all_data:125|Thread-1|全部服务码:['300203000207']
+INFO|2020-07-17 18:12:40,856|db2_data_service.py|get_service_all_data:135|Thread-1|导出数据:{'sDef': [<zktools.orm.ServiceDefine.ServiceDefine object at 0x000001EE93404B88>], 'sCP': [<zktools.orm.ServiceConfig.ServiceConfig object at 0x000001EE9303CA88>, <zktools.orm.ServiceConfig.ServiceConfig object at 0x000001EE93177288>], 'sReg': [<zktools.orm.ServiceReg.ServiceReg object at 0x000001EE9304C048>], 'sAuth': [<zktools.orm.ServiceAuth.ServiceAuth object at 0x000001EE9302E608>], 'sIdenInv': [<zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x000001EE93037D08>, <zktools.orm.ServiceIdenfy.ServiceIdenfyInvoke object at 0x000001EE93037E88>]}
+INFO|2020-07-17 18:12:40,856|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT2测试环境
+INFO|2020-07-17 18:12:40,860|esbservice.py|move_data:110|Thread-1|开始从主节点进行数据导出...
+INFO|2020-07-17 18:12:40,860|esbservice.py|import_zk_data:81|Thread-1||||||======开始向ESB-UAT1测试环境导入zk配置======|||||
+INFO|2020-07-17 18:12:40,863|connection.py|_connect:625|Thread-7|Connecting to 9.1.5.23(9.1.5.23):2181, use_ssl: False
+INFO|2020-07-17 18:12:40,882|client.py|_session_callback:533|Thread-7|Zookeeper connection established, state: CONNECTED
+INFO|2020-07-17 18:12:40,884|zkClient.py|__init__:23|Thread-1|连接zk服务器9.1.5.23:2181成功
+INFO|2020-07-17 18:12:41,008|esbservice.py|import_zk_data:84|Thread-1||||||======ESB-UAT1测试环境导入zk配置成功,新增0条,更新5条======|||||
+INFO|2020-07-17 18:12:41,014|connection.py|_connect_attempt:591|Thread-7|Closing connection to 9.1.5.23:2181
+INFO|2020-07-17 18:12:41,014|client.py|_session_callback:537|Thread-7|Zookeeper session closed, state: CLOSED
+INFO|2020-07-17 18:12:41,015|zkClient.py|close:33|Thread-1|断开zk连接...
+INFO|2020-07-17 18:12:41,016|esbservice.py|import_db_data:89|Thread-1||||||======开始向ESB-UAT1测试环境导入DB数据======|||||
+INFO|2020-07-17 18:12:41,016|db2_data_service.py|conn_db:27|Thread-1|数据库连接串ibm_db_sa://db2inst1:db2inst1@9.1.5.30:60000/escuat1
+INFO|2020-07-17 18:12:41,017|db2_data_service.py|conn_db:32|Thread-1|创建ESB-UAT1测试环境数据库连接成功
+INFO|2020-07-17 18:12:41,322|db2_data_service.py|dis_connect:194|Thread-1|关闭环境数据库连接ESB-UAT1测试环境
+INFO|2020-07-17 18:12:41,322|esbservice.py|import_db_data:94|Thread-1||||||======向ESB-UAT1测试环境导入DB数据完成======|||||
+INFO|2020-07-17 18:12:41,323|esbservice.py|move_data:120|Thread-1|======环境：ESB-UAT1测试环境数据同步成功
+INFO|2020-07-19 11:12:14,465|esbservice.py|init:130|Thread-2|===========配置加载成功===========

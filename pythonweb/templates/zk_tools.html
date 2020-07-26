@@ -1,0 +1,101 @@
+{% spaceless %}
+<!DOCTYPE html>
+
+{% load static cache%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务同步工具</title>
+    <script type="text/javascript" src="{%static 'js/jquery-3.2.1.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/jquery-easyui/jquery.easyui.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{%static 'js/jquery-easyui/themes/default/easyui.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{%static 'js/jquery-easyui/themes/icon.css'%}"/>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#master_env_list').combobox({
+                url:'/all_env',
+                method:'GET',
+                valueField:'id',
+                textField:'text'
+
+            });
+            $('#flow_env_list').combobox({
+                url:'/get_flow_env',
+                method:'GET',
+                valueField:'id',
+                textField:'text',
+                success:function (data) {
+
+                }
+
+            });
+        });
+        function submitForm(){
+            var master_envs = $('#master_env_list').combobox('getText');
+            var follow_envs = $('#flow_env_list').combobox('getText');
+            var service_codes = $('#service_codes').textbox('getText');
+
+            if(master_envs.length===0) {
+                alert('请选择从哪个环境同步');
+                return;
+            }
+            if(follow_envs.length===0){
+                alert('请选择需要同步到哪些环境');
+                return;
+            }
+            if(service_codes===undefined||service_codes===''){
+                alert('请输入服务码');
+                return;
+            }
+            $.messager.confirm('确认对话框', '您想要继续同步吗？', function(r){
+                if (r){
+                    submit_syn(master_envs, follow_envs, service_codes);
+                }
+            });
+
+
+
+        }
+
+        function submit_syn(master_envs, follow_envs, service_codes) {
+            $('#syn_env_commit').form('submit', {
+                url:'/syn_env',
+                method:'GET',
+                async:false,
+                onSubmit: function(param) {
+                    param.master_envs = master_envs;
+                    param.follow_envs = follow_envs;
+                    param.service_codes = service_codes;
+                },
+                success: function(data){
+                    var json_data = eval('(' + data + ')');
+                    if(json_data.status === 'success'){
+                        $.messager.alert('提示','同步数据成功');
+                    }else{
+                        $.messager.alert('提示','同步数据失败');
+                    }
+                }
+            });
+        }
+
+    </script>
+</head>
+<body>
+<form id = "syn_env_commit"  >
+    <label>请选择环境: </label>
+    <input id="master_env_list" class="easyui-combobox"  style="width:200px;" />
+    <br>
+    <label>请选择需要同步的环境: </label>
+    <input id="flow_env_list" class="easyui-combobox"  multiple="true" style="width:200px;" />
+    <br>
+    <label>请请输入服务码: </label>
+
+    <input id="service_codes" class="easyui-textbox" style="width:300px" prompt="多个服务码用','分割">
+    <br>
+    <a id="syn_commit" type="submit" class="easyui-linkbutton" onclick="submitForm()"  data-options="iconCls:'icon-ok'">确定</a>
+</form>
+
+
+</body>
+</html>
+{% endspaceless %}
